@@ -7,6 +7,7 @@ ExternalConfigs:
 Configurations:
     - Name: Maui Runtime x86
       FileName: maui-runtime-x86
+      Architecture: i686
       RepositoryArchitecture: i586
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
@@ -18,6 +19,7 @@ Configurations:
           - SSSE3 enabled X86 architecture
     - Name: Maui Runtime x86_64
       FileName: maui-runtime-x86_64
+      Architecture: x86_64
       RepositoryArchitecture: x86_64
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
@@ -29,6 +31,7 @@ Configurations:
           - SSSE3 enabled X86 architecture
     - Name: Maui Development x86
       FileName: maui-devel-x86
+      Architecture: i686
       RepositoryArchitecture: i586
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
@@ -40,6 +43,7 @@ Configurations:
           - SSSE3 enabled X86 architecture
     - Name: Maui Development x86_64
       FileName: maui-devel-x86_64
+      Architecture: x86_64
       RepositoryArchitecture: x86_64
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
