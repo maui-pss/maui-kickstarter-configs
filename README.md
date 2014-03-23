@@ -11,20 +11,20 @@ To learn how to install the Mer SDK, read the [Mer Wiki](https://wiki.merproject
 
 ## Preparation
 
-1. Enter the Mer Platform SDK and install the required packages:
+1) Enter the Mer Platform SDK and install the required packages:
 
 ```sh
 sudo zypper install mer-kickstarter mer-kickstarter-configs
 ```
 
-2. Clone the git tree:
+2) Clone the git tree:
 
 ```sh
 git clone https://github.com/mauios/maui-kickstarter-configs.git
 cd maui-kickstarter-configs
 ```
 
-3. Now create kickstarter files:
+3) Now create kickstarter files:
 
 ```sh
 mer-kickstarter -e . -c releases/maui-latest-devel.yaml -o maui-ks
