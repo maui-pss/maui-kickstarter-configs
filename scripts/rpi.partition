@@ -1,0 +1,2 @@
+part /boot --size 50 --ondisk mmcblk0p --fstype=4
+part / --size 1500 --ondisk mmcblk0p --fstype=4

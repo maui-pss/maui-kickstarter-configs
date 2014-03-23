@@ -82,3 +82,13 @@ Configurations:
           - Maui
           - Maui Adaptation VM
           - SSSE3 enabled X86 architecture
+
+    - Name: Maui Adaptation Raspberry Pi
+      FileName: maui-armv6l-rpi
+      Architecture: armv6l
+      RepositoryArchitecture: armv6l
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Inherit:
+          - Maui
+          - Maui Adaptation Raspberry Pi
