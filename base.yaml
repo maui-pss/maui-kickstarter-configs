@@ -17,6 +17,7 @@ Configurations:
           - Maui
           - Maui OSTree Runtime x86
           - SSSE3 enabled X86 architecture
+
     - Name: Maui Runtime x86_64
       FileName: maui-runtime-x86_64
       Architecture: x86_64
@@ -29,6 +30,7 @@ Configurations:
           - Maui
           - Maui OSTree Runtime x86_64
           - SSSE3 enabled X86 architecture
+
     - Name: Maui Development x86
       FileName: maui-devel-x86
       Architecture: i686
@@ -41,6 +43,7 @@ Configurations:
           - Maui
           - Maui OSTree Development x86
           - SSSE3 enabled X86 architecture
+
     - Name: Maui Development x86_64
       FileName: maui-devel-x86_64
       Architecture: x86_64
@@ -53,6 +56,7 @@ Configurations:
           - Maui
           - Maui OSTree Development x86_64
           - SSSE3 enabled X86 architecture
+
     - Name: Maui x86 Virtual Machine
       FileName: maui-x86-vm
       Architecture: i686
@@ -65,6 +69,7 @@ Configurations:
           - Maui
           - Maui Adaptation VM
           - SSSE3 enabled X86 architecture
+
     - Name: Maui x86_64 Virtual Machine
       FileName: maui-x86_64-vm
       Architecture: x86_64
