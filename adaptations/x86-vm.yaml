@@ -1,0 +1,4 @@
+Maui Adaptation VM:
+    Mic2Options: -o . -f livecd --pkgmgr=zypp --record-pkgs=name
+    Inherit:
+        - Maui x86 Common

@@ -53,3 +53,27 @@ Configurations:
           - Maui
           - Maui OSTree Development x86_64
           - SSSE3 enabled X86 architecture
+    - Name: Maui x86 Virtual Machine
+      FileName: maui-x86-vm
+      Architecture: i686
+      RepositoryArchitecture: i586
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation VM
+          - SSSE3 enabled X86 architecture
+    - Name: Maui x86_64 Virtual Machine
+      FileName: maui-x86_64-vm
+      Architecture: x86_64
+      RepositoryArchitecture: x86_64
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation VM
+          - SSSE3 enabled X86 architecture
