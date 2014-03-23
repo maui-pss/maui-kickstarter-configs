@@ -1,0 +1,4 @@
+Maui Adaptation x86 generic:
+    Mic2Options: -f liveusb --record-pkgs=name --pkgmgr=zypp
+    Inherit:
+        - Maui x86 Common

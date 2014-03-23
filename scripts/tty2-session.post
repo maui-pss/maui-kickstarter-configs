@@ -1,0 +1,1 @@
+ln -s /lib/systemd/system/getty@.service /lib/systemd/system/getty.target.wants/getty@tty2.service

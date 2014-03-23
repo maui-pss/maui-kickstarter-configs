@@ -1,0 +1,53 @@
+ExternalConfigs:
+   - /usr/share/kickstarter-configs/mer
+   - generic
+   - adaptations
+   - scripts
+
+Configurations:
+    - Name: Maui Runtime x86
+      FileName: maui-runtime-x86
+      RepositoryArchitecture: i586
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation x86 generic
+          - SSSE3 enabled X86 architecture
+    - Name: Maui Runtime x86_64
+      FileName: maui-runtime-x86_64
+      RepositoryArchitecture: x86_64
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation x86 generic
+          - SSSE3 enabled X86 architecture
+    - Name: Maui Development x86
+      FileName: maui-devel-x86
+      RepositoryArchitecture: i586
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation x86 generic
+          - Maui Development
+          - SSSE3 enabled X86 architecture
+    - Name: Maui Development x86_64
+      FileName: maui-devel-x86_64
+      RepositoryArchitecture: x86_64
+      BootloaderTimeout: 0
+      BootloaderOptions: "quiet"
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui
+          - Maui Adaptation x86 generic
+          - Maui Development
+          - SSSE3 enabled X86 architecture

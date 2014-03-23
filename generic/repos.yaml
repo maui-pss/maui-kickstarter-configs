@@ -1,0 +1,35 @@
+Repositories:
+    - Name: mer-core
+      Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+      Options: --debuginfo
+
+    - Name: mer-core-debug
+      Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/debug
+
+    - Name: mer-devel
+      Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
+      Options: --debuginfo
+
+    - Name: mer-tools
+      Url: http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
+      Options: --debuginfo
+
+    - Name: mer-updates
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mer-updates/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
+    - Name: maui
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
+    - Name: hawaii
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
+    - Name: hawaii-mw
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mw/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
+# Hardware adaptations
+    - Name: maui-adaptation-x86-generic
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/

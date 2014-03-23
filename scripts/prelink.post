@@ -1,0 +1,3 @@
+if [ -x /usr/sbin/prelink ]; then
+    /usr/sbin/prelink -aRqm
+fi

@@ -1,0 +1,2 @@
+mkdir -p /etc/modules-load.d/
+echo "fuse" > /etc/modules-load.d/fuse.conf
