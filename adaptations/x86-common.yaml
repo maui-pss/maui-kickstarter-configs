@@ -11,7 +11,6 @@ Maui x86 Common:
       #    - acpid
           - linux-firmware
       #    - installer-shell
-          - kernel-adaptation-pc
           - mesa-llvmpipe-dri-swrast-driver
           - mesa-llvmpipe-libGLESv2
           - mesa-llvmpipe-libwayland-egl
