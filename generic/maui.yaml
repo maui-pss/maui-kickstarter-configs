@@ -120,6 +120,7 @@ Maui:
 
     # Hawaii
         - hawaii-wallpapers
+        - hawaii-shell
 
     PostScripts:
         - rpm-rebuilddb.post
