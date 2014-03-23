@@ -40,12 +40,18 @@ Step 3 produces the following kickstarts:
 * maui-runtime-x86_64: Runtime tree for x86 64-bit systems
 * maui-devel-x86_64: Development tree for x86 64-bit systems
 
-## Building Images
+## Building trees for OSTree
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
 
 Choose the OS tree you want to build, in this example we choose `maui-runtime-x86`:
 
 ```
-sudo mic create fs maui-runtime-x86.ks -o . --pkgmgr=zypp --arch=i686 --record-pkgs=name --pack-to=maui-runtime-x86.tar.gz --logfile=maui-runtime-x86-build.log
+sudo mic create auto maui-runtime-x86.ks
 ```
+
+The following files will be created and are named after the target:
+
+* maui-runtime-x86.tar.gz: compressed tarball to import into OSTree
+* maui-runtime-x86.packages: list of packages included by the tree
+* maui-runtime-x86-build.log: logs produced by mic

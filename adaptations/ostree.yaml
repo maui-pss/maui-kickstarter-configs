@@ -1,0 +1,29 @@
+OSTree:
+    ExtraPackages:
+        - ostree
+
+Maui OSTree Runtime x86:
+    Mic2Options: -o . -f fs --pkgmgr=zypp --record-pkgs=name --pack-to=maui-runtime-x86.tar.gz --logfile=maui-runtime-x86-build.log
+    Inherit:
+        - OSTree
+        - Maui Adaptation x86 generic
+
+Maui OSTree Runtime x86_64:
+    Mic2Options: -o . -f fs --pkgmgr=zypp --record-pkgs=name --pack-to=maui-runtime-x86_64.tar.gz --logfile=maui-runtime-x86_64-build.log
+    Inherit:
+        - OSTree
+        - Maui Adaptation x86 generic
+
+Maui OSTree Development x86:
+    Mic2Options: -o . -f fs --pkgmgr=zypp --record-pkgs=name --pack-to=maui-devel-x86.tar.gz --logfile=maui-devel-x86-build.log
+    Inherit:
+        - OSTree
+        - Maui Adaptation x86 generic
+        - Maui Development
+
+Maui OSTree Development x86_64:
+    Mic2Options: -o . -f fs --pkgmgr=zypp --record-pkgs=name --pack-to=maui-devel-x86_64.tar.gz --logfile=maui-devel-x86_64-build.log
+    Inherit:
+        - OSTree
+        - Maui Adaptation x86 generic
+        - Maui Development

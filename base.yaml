@@ -14,7 +14,7 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation x86 generic
+          - Maui OSTree Runtime x86
           - SSSE3 enabled X86 architecture
     - Name: Maui Runtime x86_64
       FileName: maui-runtime-x86_64
@@ -25,7 +25,7 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation x86 generic
+          - Maui OSTree Runtime x86_64
           - SSSE3 enabled X86 architecture
     - Name: Maui Development x86
       FileName: maui-devel-x86
@@ -36,8 +36,7 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation x86 generic
-          - Maui Development
+          - Maui OSTree Development x86
           - SSSE3 enabled X86 architecture
     - Name: Maui Development x86_64
       FileName: maui-devel-x86_64
@@ -48,6 +47,5 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation x86 generic
-          - Maui Development
+          - Maui OSTree Development x86_64
           - SSSE3 enabled X86 architecture
