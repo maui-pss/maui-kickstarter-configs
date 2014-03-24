@@ -40,10 +40,14 @@ Step 3 produces the following kickstarts for OSTree:
 * maui-runtime-x86_64: Runtime tree for x86 64-bit systems
 * maui-devel-x86_64: Development tree for x86 64-bit systems
 
-and the following kickstarts for virtual machines:
+the following kickstarts for virtual machines:
 
 * maui-x86-vm.ks: x86 32-bit virtual machine
 * maui-x86_64-vm.ks: x86 64-bit virtual machine
+
+the following kickstarts for hardware adaptations:
+
+* maui-armv6l-rpi: Raspberry Pi adaptation
 
 ## Building trees for OSTree
 
