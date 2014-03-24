@@ -92,3 +92,11 @@ Configurations:
       Inherit:
           - Maui
           - Maui Adaptation Raspberry Pi
+
+    - Name: Maui Adaptation Google Nexus7
+      FileName: maui-armv7hl-google-nexus7
+      Architecture: armv7hl
+      RepositoryArchitecture: armv7hl
+      Inherit:
+          - Maui
+          - Maui Adaptation Google Nexus7

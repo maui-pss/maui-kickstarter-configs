@@ -48,6 +48,7 @@ the following kickstarts for virtual machines:
 the following kickstarts for hardware adaptations:
 
 * maui-armv6l-rpi: Raspberry Pi adaptation
+* maui-armv7hl-google-nexus7: Google Nexus 7 adaptation
 
 ## Building trees for OSTree
 

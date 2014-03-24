@@ -1,0 +1,12 @@
+Maui Adaptation Google Nexus7:
+    Kernel: kernel-adaptation-google-nexus7
+    Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus7-build.log
+    Inherit:
+        - Maui Adaptation Tegra3 Common
+    Repos:
+        - hawaii-hw-nv-tegra3-nexus7
+    ExtraPackages:
+        - config-nexus7
+        - moslo-nexus7
+    PostScripts:
+        - scripts/arch-armv7hl.post

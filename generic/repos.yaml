@@ -36,3 +36,9 @@ Repositories:
 
     - Name: hawaii-hw-brcm-brcm2835-rpi
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/rpi/@MER_RELEASE@_@ARCH@/
+
+    - Name: hawaii-hw-nv-tegra3-common
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/nv:/tegra3:/common/@MER_RELEASE@_@ARCH@/
+
+    - Name: hawaii-hw-nv-tegra3-nexus7
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/nv:/tegra3:/nexus7/@MER_RELEASE@_@ARCH@/

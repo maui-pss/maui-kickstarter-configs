@@ -1,0 +1,18 @@
+Maui Adaptation Tegra3 Common:
+    Inherit:
+        - ARMv7 hardfp architecture
+    Repos:
+        - hawaii-hw-nv-tegra3-common
+    ExtraPackages:
+        - codecs-tegra3
+        - configs-tegra3
+        - graphics-adaptation-tegra3
+        - graphics-adaptation-tegra3-libEGL
+        - graphics-adaptation-tegra3-libGLESv1
+        - graphics-adaptation-tegra3-libGLESv2
+        - graphics-adaptation-tegra3-libOMX
+        - #graphics-adaptation-tegra-tools
+        - linux-firmware-tegra3
+        - mtdev
+        - -sample-media
+        - sample-media-tegra3
