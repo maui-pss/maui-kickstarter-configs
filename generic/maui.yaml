@@ -124,7 +124,6 @@ Maui:
 
     PostScripts:
         - rpm-rebuilddb.post
-        - scripts/prelink.post
         - scripts/tty2-session.post
         - scripts/enable-fuse.post
 
