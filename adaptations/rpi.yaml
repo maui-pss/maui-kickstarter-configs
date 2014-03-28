@@ -3,7 +3,7 @@ Maui Adaptation Raspberry Pi:
     Kernel: kernel-adaptation-rpi
     Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv6l-rpi-build.log
     Repos:
-        - hawaii-hw-brcm-brcm2835-rpi
+        - hawaii-hw-brcm-bcm2835-rpi
     ExtraPackages:
         - bootloader-rpi
         - mkimage-rpi
