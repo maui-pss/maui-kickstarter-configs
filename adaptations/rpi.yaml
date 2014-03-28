@@ -9,6 +9,10 @@ Maui Adaptation Raspberry Pi:
         - mkimage-rpi
         - rpi-configs
         - gfx-rpi
+        - gfx-rpi-libOMXIL
+        - gfx-rpi-libEGL
+        - gfx-rpi-libGLESv1
+        - gfx-rpi-libGLESv2
     #    - gst-oxm-rpi
     #    - qtplatformplugin-rpi
     PostScripts:
