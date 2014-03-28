@@ -66,6 +66,30 @@ The following files will be created and are named after the target:
 * maui-runtime-x86.packages: list of packages included by the tree
 * maui-runtime-x86-build.log: logs produced by mic
 
+## Building hardware adaptations
+
+### Raspberry Pi
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
+
+Before building the Raspberry Pi image remember to install a few packages:
+
+```sh
+sudo zypper install syslinux-extlinux
+```
+
+Create the image:
+
+```
+sudo mic create auto maui-armv6l-rpi.ks
+```
+
+Now you can insert a SDCard and write the image to it:
+
+```sh
+dd if=maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0p bs=4M
+```
+
 ## Building virtual machines
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
