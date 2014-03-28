@@ -87,7 +87,7 @@ sudo mic create auto maui-armv6l-rpi.ks
 Now you can insert a SDCard and write the image to it:
 
 ```sh
-dd if=maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0p bs=4M
+dd if=maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 ```
 
 ## Building virtual machines
