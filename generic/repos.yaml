@@ -31,8 +31,8 @@ Repositories:
       Options: --debuginfo
 
 # Hardware adaptations
-    - Name: maui-adaptation-x86-generic
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
+    - Name: hawaii-hw-x86-x86-common
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
 
     - Name: hawaii-hw-brcm-bcm2835-rpi
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/brcm:/bcm2835:/rpi/@MER_RELEASE@_@ARCH@/

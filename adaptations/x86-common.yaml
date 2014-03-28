@@ -6,7 +6,7 @@ Maui x86 Common:
     BootloaderTimeout: 0
     StartX: True
     Repos:
-        - maui-adaptation-x86-generic
+        - hawaii-hw-x86-x86-common
     ExtraPackages:
       #    - acpid
           - linux-firmware
