@@ -52,12 +52,12 @@ the following kickstarts for hardware adaptations:
 
 ## Building trees for OSTree
 
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Choose the OS tree you want to build, in this example we choose `maui-runtime-x86`:
 
 ```
-sudo mic create auto maui-runtime-x86.ks
+pushd maui-ks/; sudo mic create auto maui-runtime-x86.ks; popd
 ```
 
 The following files will be created and are named after the target:
@@ -70,7 +70,7 @@ The following files will be created and are named after the target:
 
 ### Raspberry Pi
 
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Before building the Raspberry Pi image remember to install a few packages:
 
@@ -81,21 +81,21 @@ sudo zypper install syslinux-extlinux
 Create the image:
 
 ```
-sudo mic create auto maui-armv6l-rpi.ks
+pushd maui-ks/; sudo mic create auto maui-armv6l-rpi.ks; popd
 ```
 
 Now you can insert a SDCard and write the image to it:
 
 ```sh
-dd if=maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
+sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 ```
 
 ## Building virtual machines
 
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/maui-ks/ directory.
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Choose the virtual machine you want to build, in this example we choose `maui-x86-vm`:
 
 ```
-sudo mic create auto maui-x86-vm.ks
+popd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
 ```
