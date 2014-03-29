@@ -90,6 +90,16 @@ Now you can insert a SDCard and write the image to it:
 sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 ```
 
+### Google Nexus 7
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+
+Create the image:
+
+```sh
+pushd maui-ks/; sudo mic create auto maui-armv7hl-google-nexus7.ks; popd
+```
+
 ## Building virtual machines
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
