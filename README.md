@@ -56,7 +56,7 @@ Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Choose the OS tree you want to build, in this example we choose `maui-runtime-x86`:
 
-```
+```sh
 pushd maui-ks/; sudo mic create auto maui-runtime-x86.ks; popd
 ```
 
@@ -80,7 +80,7 @@ sudo zypper install syslinux-extlinux
 
 Create the image:
 
-```
+```sh
 pushd maui-ks/; sudo mic create auto maui-armv6l-rpi.ks; popd
 ```
 
@@ -106,6 +106,6 @@ Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Choose the virtual machine you want to build, in this example we choose `maui-x86-vm`:
 
-```
+```sh
 popd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
 ```
