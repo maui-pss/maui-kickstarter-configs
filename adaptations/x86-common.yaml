@@ -8,7 +8,7 @@ Maui x86 Common:
     Repos:
         - hawaii-hw-x86-x86-common
     ExtraPackages:
-      #    - acpid
+          - acpid
           - linux-firmware
       #    - installer-shell
           - mesa-x86-generic-dri-i965-driver
