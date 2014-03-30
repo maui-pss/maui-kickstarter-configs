@@ -13,6 +13,7 @@ Maui Adaptation Raspberry Pi:
         - gfx-rpi-libEGL
         - gfx-rpi-libGLESv1
         - gfx-rpi-libGLESv2
+        - weston-rpi
     #    - gst-oxm-rpi
     #    - qtplatformplugin-rpi
     PostScripts:
