@@ -118,8 +118,16 @@ Maui:
         - qt5-qttools-qdbus
 
     # Hawaii
+        - fluid
+        - greenisland
         - hawaii-wallpapers
+        - hawaii-icon-theme
         - hawaii-shell
+        - hawaii-system-preferences
+    #    - hawaii-terminal
+    #    - swordfish
+        - eyesight
+        - hawaii-2048
 
     PostScripts:
         - rpm-rebuilddb.post
