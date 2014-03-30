@@ -37,6 +37,7 @@ Maui:
         - vim-enhanced
         - vim-minimal
     #    - yum
+        - systemd-analyze
         - python
 
     # Some fonts
