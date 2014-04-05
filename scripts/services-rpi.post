@@ -1,0 +1,6 @@
+## services-rpi.post from maui-kickstarter-configs package
+systemctl disable connman-vpn.service
+systemctl disable ofono.service
+systemctl disable wpa_supplicant.service
+systemctl disable bluetooth.target
+## end services-rpi.post
