@@ -25,6 +25,7 @@ Maui:
 
     ExtraPackages:
     # Base
+        - iproute
         - parted
         - openssh-clients
         - openssh-server
