@@ -2,5 +2,11 @@ Maui x86 Adaptation LiveCD:
     Mic2Options: -o . -f livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
+    ExtraPackages:
+          - mesa-x86-generic-dri-i965-driver
+          - mesa-x86-generic-dri-i915-driver
+          - mesa-x86-generic-dri-ati-driver
+          - mesa-x86-generic-dri-nouveau-driver
+          - mesa-x86-generic-dri-swrast-driver
     PostScripts:
         - scripts/dracut-livecd.post

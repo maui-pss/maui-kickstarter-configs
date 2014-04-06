@@ -11,12 +11,6 @@ Maui x86 Common:
           - acpid
           - linux-firmware
       #    - installer-shell
-          - mesa-x86-generic-dri-i965-driver
-          - mesa-x86-generic-dri-i915-driver
-          - mesa-x86-generic-dri-ati-driver
-          - mesa-x86-generic-dri-nouveau-driver
-          - mesa-x86-generic-dri-svga-driver
-          - mesa-x86-generic-dri-swrast-driver
           - mesa-x86-generic-libGLESv2
           - mesa-x86-generic-libwayland-egl
           - qt5-plugin-generic-evdev
