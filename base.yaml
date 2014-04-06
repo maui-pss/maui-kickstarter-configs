@@ -67,7 +67,7 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation VM
+          - Maui x86 Adaptation VM
           - SSSE3 enabled X86 architecture
 
     - Name: Maui x86_64 Virtual Machine
@@ -80,7 +80,7 @@ Configurations:
       Part: x86.partition
       Inherit:
           - Maui
-          - Maui Adaptation VM
+          - Maui x86 Adaptation VM
           - SSSE3 enabled X86 architecture
 
     - Name: Maui Adaptation Raspberry Pi
