@@ -33,6 +33,7 @@ Maui:
         - rsync
         - fuse
         - nano
+        - less
         - -ed
         - -vi
         - vim-enhanced
