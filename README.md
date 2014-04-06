@@ -33,19 +33,26 @@ mer-kickstarter -e . -c releases/maui-latest-devel.yaml -o maui-ks
 Steps 1 and 2 must be performed only the first time, step 3 must be performed every time
 the kickstarter configuration changes (e.g. git pull picks up changes from the repository).
 
-Step 3 produces the following kickstarts for OSTree:
+Step 3 produces the following kickstarts
+
+for OSTree:
 
 * maui-runtime-x86.ks: Runtime tree for x86 32-bit systems
 * maui-devel-x86.ks: Development tree for x86 32-bit systems
 * maui-runtime-x86_64: Runtime tree for x86 64-bit systems
 * maui-devel-x86_64: Development tree for x86 64-bit systems
 
-the following kickstarts for virtual machines:
+for virtual machines:
 
 * maui-x86-vm.ks: x86 32-bit virtual machine
 * maui-x86_64-vm.ks: x86 64-bit virtual machine
 
-the following kickstarts for hardware adaptations:
+for live medias:
+
+* maui-x86-livecd.ks: x86 32-bit live CD
+* maui-x86_64-livecd.ks: x86 64-bit live CD
+
+for hardware adaptations:
 
 * maui-armv6l-rpi: Raspberry Pi adaptation
 * maui-armv7hl-google-nexus7: Google Nexus 7 adaptation

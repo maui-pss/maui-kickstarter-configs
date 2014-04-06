@@ -1,0 +1,6 @@
+Maui x86 Adaptation LiveCD:
+    Mic2Options: -o . -f livecd --pkgmgr=zypp --record-pkgs=name
+    Inherit:
+        - Maui x86 Common
+    PostScripts:
+        - scripts/dracut-livecd.post
