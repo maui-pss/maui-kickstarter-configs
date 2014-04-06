@@ -1,6 +1,6 @@
 OSTree:
     ExtraPackages:
-        - ostree
+       - ostree
 
 Maui OSTree Adaptation x86 generic:
     ExtraPackages:
