@@ -5,3 +5,5 @@ Maui x86 Adaptation VM:
     ExtraPackages:
           - mesa-x86-generic-dri-svga-driver
           - mesa-x86-generic-dri-swrast-driver
+    PostScripts:
+        - scripts/services-x86-vm.post
