@@ -18,4 +18,5 @@ Maui Adaptation Raspberry Pi:
     #    - qtplatformplugin-rpi
     PostScripts:
         - arch-armv6l.post
+        - scripts/rpi-setup.post
         - services-rpi.post
