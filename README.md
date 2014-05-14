@@ -116,3 +116,13 @@ Choose the virtual machine you want to build, in this example we choose `maui-x8
 ```sh
 pushd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
 ```
+
+## Building live media
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+
+Choose the virtual machine you want to build, in this example we choose `maui-x86-livecd`:
+
+```sh
+pushd maui-ks/; sudo mic create auto maui-x86-livecd.ks; popd
+```
