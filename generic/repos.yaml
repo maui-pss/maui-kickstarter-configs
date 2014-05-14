@@ -18,6 +18,10 @@ Repositories:
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mer-updates/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
+    - Name: mer-extra-updates
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mer-extra-updates/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
     - Name: maui
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo

@@ -8,5 +8,5 @@ Maui x86 Adaptation LiveCD:
           - mesa-x86-generic-dri-ati-driver
           - mesa-x86-generic-dri-nouveau-driver
           - mesa-x86-generic-dri-swrast-driver
-    PostScripts:
-        - scripts/dracut-livecd.post
+#    PostScripts:
+#        - scripts/dracut-livecd.post
