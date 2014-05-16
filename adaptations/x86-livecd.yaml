@@ -2,6 +2,7 @@ Maui x86 Adaptation LiveCD:
     Mic2Options: -o . -f livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
+    BootloaderAppend: "quiet rd.live.image rd.luks=0 rd.md=0 rd.dm=0"
     ExtraPackages:
           - mesa-x86-generic-dri-i965-driver
           - mesa-x86-generic-dri-i915-driver
