@@ -13,7 +13,7 @@ Maui:
         - mer-core-debug
         - mer-devel
         - mer-updates
-    #    - mer-extra-updates
+        - mer-extra-updates
         - mer-tools
         - maui
         - hawaii
