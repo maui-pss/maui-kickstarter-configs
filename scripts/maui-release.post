@@ -1,9 +1,9 @@
 cat > $INSTALL_ROOT/etc/os-release <<EOF
-NAME=Maui
-VERSION="1 (Development)"
+NAME="Maui"
+VERSION="0.1.0 (Development)"
 ID=maui
-VERSION_ID=1
-PRETTY_NAME="Maui 1 (Development)"
+VERSION_ID="0.1.0"
+PRETTY_NAME="Maui 0.1.0 (Development)"
 ANSI_COLOR="0;34"
 HOME_URL="http://www.maui-project.org/"
 EOF
