@@ -2,8 +2,5 @@ Maui x86 Adaptation VM:
     Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
-    ExtraPackages:
-          - mesa-x86-generic-dri-svga-driver
-          - mesa-x86-generic-dri-swrast-driver
     PostScripts:
         - scripts/services-x86-vm.post

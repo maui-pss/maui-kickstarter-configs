@@ -8,6 +8,7 @@ Maui OSTree Adaptation x86 generic:
         - mesa-x86-generic-dri-i915-driver
         - mesa-x86-generic-dri-ati-driver
         - mesa-x86-generic-dri-nouveau-driver
+        - mesa-x86-generic-dri-svga-driver
         - mesa-x86-generic-dri-swrast-driver
 
 Maui OSTree Runtime x86:

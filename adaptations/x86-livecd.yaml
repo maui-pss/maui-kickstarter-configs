@@ -3,9 +3,3 @@ Maui x86 Adaptation LiveCD:
     Inherit:
         - Maui x86 Common
     BootloaderAppend: "quiet rd.live.image rd.luks=0 rd.md=0 rd.dm=0"
-    ExtraPackages:
-          - mesa-x86-generic-dri-i965-driver
-          - mesa-x86-generic-dri-i915-driver
-          - mesa-x86-generic-dri-ati-driver
-          - mesa-x86-generic-dri-nouveau-driver
-          - mesa-x86-generic-dri-swrast-driver
