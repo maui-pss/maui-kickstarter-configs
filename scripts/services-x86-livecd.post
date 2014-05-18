@@ -1,5 +1,5 @@
 ## services-x86-livecd.post from maui-kickstarter-configs package
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
-systemctl mask sshd.socket
+systemctl mask sshd-keys.service
 ## end services-x86-livecd.post
