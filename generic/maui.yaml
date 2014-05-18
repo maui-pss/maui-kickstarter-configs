@@ -121,6 +121,10 @@ Maui:
         - qt5-qttools-kmap2qmap
         - qt5-qttools-qdbus
 
+    # Maui
+        - plymouth-lite
+        - maui-splashscreen
+
     # Hawaii
         - fluid
         - greenisland
