@@ -132,6 +132,7 @@ Maui:
         - hawaii-icon-theme
         - hawaii-shell
         - hawaii-system-preferences
+        - hawaii-widget-styles
     #    - hawaii-terminal
     #    - swordfish
         - eyesight
