@@ -1,5 +1,5 @@
 Maui x86 Adaptation LiveCD:
-    Mic2Options: -o . -f livecd --pkgmgr=zypp --record-pkgs=name
+    Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
     BootloaderAppend: "quiet rd.live.image rd.luks=0 rd.md=0 rd.dm=0"
