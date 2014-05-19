@@ -2,4 +2,5 @@
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl enable accounts-daemon.service
+systemctl enable sddm.service
 ## end services-x86-vm.post
