@@ -61,6 +61,7 @@ Configurations:
       FileName: maui-x86-vm
       Architecture: i686
       RepositoryArchitecture: i586
+      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86-vm.log
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Kernel: kernel-adaptation-pc
@@ -74,6 +75,7 @@ Configurations:
       FileName: maui-x86_64-vm
       Architecture: x86_64
       RepositoryArchitecture: x86_64
+      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86_64-vm.log
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Kernel: kernel-adaptation-pc
