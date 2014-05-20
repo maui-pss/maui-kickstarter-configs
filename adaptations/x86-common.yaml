@@ -10,7 +10,7 @@ Maui x86 Common:
     ExtraPackages:
           - acpid
           - linux-firmware
-      #    - installer-shell
+          - installer-shell
           - mesa-x86-generic-libEGL
           - mesa-x86-generic-libGLESv2
           - mesa-x86-generic-libgbm
