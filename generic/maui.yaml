@@ -122,6 +122,7 @@ Maui:
         - qt5-qttools-qdbus
 
     # Maui
+        - maui-release
         - plymouth-lite
         - maui-splashscreen
 
@@ -148,7 +149,6 @@ Maui:
 
     NoChrootScripts:
         - scripts/img-name.post
-        - scripts/maui-release.post
         - scripts/sddm-theme.post
 
 Maui Development:
