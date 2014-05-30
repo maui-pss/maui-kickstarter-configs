@@ -16,13 +16,14 @@ Maui:
         - mer-extra-updates
         - mer-tools
         - maui
-        - hawaii
-        - hawaii-mw
+        - kf5
+        - ux-plasma
 
     Groups:
         - Mer Core
         - Mer Core Utils
         - Mer Connectivity
+        - Mer Minimal Xorg
 
     ExtraPackages:
     # Base
@@ -128,19 +129,6 @@ Maui:
 
     # Others
         - sddm
-
-    # Hawaii
-        - fluid
-        - greenisland
-        - hawaii-wallpapers
-        - hawaii-icon-theme
-        - hawaii-shell
-        - hawaii-system-preferences
-        - hawaii-widget-styles
-    #    - hawaii-terminal
-    #    - swordfish
-        - eyesight
-        - hawaii-2048
 
     PostScripts:
         - rpm-rebuilddb.post
