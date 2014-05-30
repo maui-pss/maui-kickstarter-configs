@@ -42,6 +42,10 @@ Repositories:
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/kde5/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
+    - Name: ux-plasma
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/plasma/@MER_RELEASE@_@ARCH@/
+      Options: --debuginfo
+
 # Hardware adaptations
     - Name: hawaii-hw-x86-x86-common
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
