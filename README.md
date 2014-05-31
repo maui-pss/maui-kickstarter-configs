@@ -10,7 +10,7 @@ This is the mer-kickstarter configuration for Maui and requires:
 
 To learn how to install the Mer SDK, read the [Mer Wiki](https://wiki.merproject.org/wiki/Platform_SDK).
 
-## Install maui-mic-plugins
+## Preparation
 
 Enter the Mer Platform SDK and follow the instructions below:
 
@@ -20,18 +20,10 @@ Enter the Mer Platform SDK and follow the instructions below:
 sudo zypper ar -G -f http://repo.merproject.org/obs/home:/plfiorini:/maui:/devel:/tools/latest_i486/ maui-tools
 ```
 
-2) Install the maui-mic-plugins package:
+2) Install the packages:
 
 ```sh
-sudo zypper in maui-mic-plugins
-```
-
-## Preparation
-
-1) Enter the Mer Platform SDK and install the required packages:
-
-```sh
-sudo zypper install mer-kickstarter mer-kickstarter-configs
+sudo zypper install mer-kickstarter mer-kickstarter-configs maui-mic-plugins
 ```
 
 2) Clone the git tree:
