@@ -24,4 +24,5 @@ Maui x86 Common:
           - mesa-x86-generic-dri-swrast-driver
           - qt5-plugin-generic-evdev
           - qt5-plugin-platform-eglfs
+          - qt5-plugin-platform-kms
           - qt5-qtwayland-wayland_egl
