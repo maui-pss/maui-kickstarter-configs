@@ -61,6 +61,7 @@ Maui:
         - qt5-plugin-imageformat-jpeg
         - qt5-plugin-imageformat-gif
         - qt5-plugin-imageformat-ico
+        - qt5-plugin-platform-xcb
         - qt5-qtimageformats-plugin-mng
         - qt5-qtimageformats-plugin-tga
         - qt5-qtimageformats-plugin-tiff
