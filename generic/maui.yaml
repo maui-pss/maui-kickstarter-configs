@@ -125,6 +125,7 @@ Maui:
         - maui-splashscreen
 
     # Others
+        - accountsservice
         - sddm
 
     PostScripts:
