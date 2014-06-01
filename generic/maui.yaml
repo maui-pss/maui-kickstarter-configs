@@ -99,7 +99,6 @@ Maui:
         - qt5-qtdeclarative-import-localstorageplugin
         - qt5-qtdeclarative-import-models2
         - qt5-qtdeclarative-import-particles2
-        - qt5-qtdeclarative-import-privatewidgets
         - qt5-qtdeclarative-import-qtquick2plugin
         - qt5-qtdeclarative-import-settings
         - qt5-qtdeclarative-import-window2
