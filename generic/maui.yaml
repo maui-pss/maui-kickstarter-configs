@@ -46,7 +46,6 @@ Maui:
         - python
 
     # Some fonts
-        - cjkuni-fonts
         - liberation-fonts-common
         - liberation-mono-fonts
         - liberation-sans-fonts
