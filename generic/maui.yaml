@@ -54,6 +54,7 @@ Maui:
         - droid-sans-fonts
         - droid-sans-mono-fonts
         - droid-serif-fonts
+        - oxygen-fonts
 
     # Qt 5
         - qt5-default
