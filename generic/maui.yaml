@@ -125,6 +125,7 @@ Maui:
         - maui-release
         - plymouth-lite
         - maui-splashscreen
+        - maui-sddm-themes
 
     # Others
         - accountsservice
