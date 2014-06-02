@@ -124,6 +124,7 @@ Maui:
 
     # Others
         - accountsservice
+        - avahi
         - sddm
 
     # Hawaii
