@@ -144,10 +144,10 @@ Maui:
         - rpm-rebuilddb.post
         - scripts/tty2-session.post
         - scripts/enable-fuse.post
+        - scripts/services.post
 
     NoChrootScripts:
         - scripts/img-name.post
-        - scripts/services.post
         - scripts/sddm-theme.post
 
 Maui Development:
