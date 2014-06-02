@@ -2,5 +2,5 @@
 
 echo "--- sddm-theme.post"
 
-sed -i "s/CurrentTheme=.*/CurrentTheme=mauiproject/g" /etc/sddm.conf
+sed -i "s/CurrentTheme=.*/CurrentTheme=mauiproject/g" $INSTALL_ROOT/etc/sddm.conf
 ## end sddm-theme.post
