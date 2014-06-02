@@ -22,6 +22,7 @@ Maui x86 Common:
           - mesa-x86-generic-dri-nouveau-driver
           - mesa-x86-generic-dri-svga-driver
           - mesa-x86-generic-dri-swrast-driver
+          - xorg-x11-drv-vmware
           - qt5-plugin-generic-evdev
           - qt5-plugin-platform-eglfs
           - qt5-plugin-platform-kms
