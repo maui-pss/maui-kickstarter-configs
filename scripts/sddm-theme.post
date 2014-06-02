@@ -1,3 +1,6 @@
 ## sddm-theme.post from maui-kickstarter-configs package
+
+echo "--- sddm-theme.post"
+
 sed -i "s/CurrentTheme=.*/CurrentTheme=mauiproject/g" /etc/sddm.conf
 ## end sddm-theme.post

@@ -1,4 +1,7 @@
 ## arch-armv7hl.post from maui-kickstarter-configs package
+
+echo "--- arch-armv7hl.post"
+
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv7hl-meego-linux' > /etc/rpm/platform
 

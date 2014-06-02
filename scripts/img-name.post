@@ -1,3 +1,8 @@
+## img-name.post from maui-kickstarter-configs package
+
+echo "--- img-name.post"
+
 if [ -n "$IMG_NAME" ]; then
     echo "BUILD: $IMG_NAME" >> $INSTALL_ROOT/etc/meego-release
 fi
+## end img-name.post

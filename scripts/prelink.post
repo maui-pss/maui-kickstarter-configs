@@ -1,3 +1,8 @@
+## prelink.post from maui-kickstarter-configs package
+
+echo "--- prelink.post"
+
 if [ -x /usr/sbin/prelink ]; then
     /usr/sbin/prelink -aRqm
 fi
+## end prelink.post

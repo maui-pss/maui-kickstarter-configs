@@ -1,4 +1,7 @@
 ## services-x86-vm.post from maui-kickstarter-configs package
+
+echo "--- services-x86-vm.post"
+
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl enable accounts-daemon.service

@@ -1,2 +1,7 @@
+## enable-fuse.post from maui-kickstarter-configs package
+
+echo "--- enable-fuse.post"
+
 mkdir -p /etc/modules-load.d/
 echo "fuse" > /etc/modules-load.d/fuse.conf
+## end enable-fuse.post
