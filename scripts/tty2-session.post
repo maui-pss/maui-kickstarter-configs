@@ -1,1 +1,6 @@
+## tty2-session.post from maui-kickstarter-configs package
+
+echo "--- tty2-session.post"
+
 ln -s /lib/systemd/system/getty@.service /lib/systemd/system/getty.target.wants/getty@tty2.service
+## end tty2-session.post

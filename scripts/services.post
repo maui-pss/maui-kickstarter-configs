@@ -1,3 +1,6 @@
 ## services.post from maui-kickstarter-configs package
+
+echo "--- services.post"
+
 systemctl enable avahi-daemon.service
 ## end services.post

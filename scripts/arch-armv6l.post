@@ -1,4 +1,7 @@
 ## arch-armv6l.post from maui-kickstarter-configs package
+
+echo "--- arch-armv6l.post"
+
 # Without this line the rpm don't get the architecture right.
 echo -n 'armv6l-meego-linux' > /etc/rpm/platform
 

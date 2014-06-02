@@ -1,4 +1,7 @@
 ## services-rpi.post from maui-kickstarter-configs package
+
+echo "--- services-rpi.post"
+
 systemctl disable connman-vpn.service
 systemctl disable ofono.service
 systemctl disable wpa_supplicant.service

@@ -1,4 +1,7 @@
 ## rpi-post.post from maui-kickstarter-configs package
+
+echo "--- rpi-post.post"
+
 cat > /boot/config.txt <<EOF
 gpu_mem=128
 dispmanx_offline=1
