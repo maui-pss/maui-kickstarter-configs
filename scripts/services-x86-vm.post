@@ -2,9 +2,11 @@
 
 echo "--- services-x86-vm.post"
 
+systemctl set-default -f graphical.target
+
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl enable accounts-daemon.service
 systemctl enable sddm.service
-ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
 ## end services-x86-vm.post
