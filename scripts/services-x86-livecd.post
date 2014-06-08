@@ -2,10 +2,12 @@
 
 echo "--- services-x86-livecd.post"
 
+systemctl set-default -f graphical.target
+
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl mask sshd-keys.service
 systemctl enable accounts-daemon.service
 systemctl enable sddm.service
-ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target
+
 ## end services-x86-livecd.post
