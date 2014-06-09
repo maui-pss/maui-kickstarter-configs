@@ -4,6 +4,8 @@ Maui:
     Timezone: UTC
 
     RootPass: maui
+    DefaultUser: maui
+    DefaultUserPass: maui
 
     Active: True
 
