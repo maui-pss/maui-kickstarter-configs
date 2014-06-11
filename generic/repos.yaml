@@ -38,8 +38,8 @@ Repositories:
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/kf5/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
-    - Name: kde5
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/kde5/@MER_RELEASE@_@ARCH@/
+    - Name: plasma5
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/plasma5/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
     - Name: ux-plasma
