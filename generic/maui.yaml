@@ -18,6 +18,7 @@ Maui:
         - mer-extra-updates
         - mer-tools
         - maui
+        - hawaii
         - hawaii-mw
         - kf5
         - ux-plasma
@@ -132,6 +133,19 @@ Maui:
         - accountsservice
         - avahi
         - sddm
+
+    # Hawaii
+        - fluid
+        - greenisland
+        - hawaii-wallpapers
+        - hawaii-icon-theme
+        - hawaii-shell
+        - hawaii-system-preferences
+        - hawaii-widget-styles
+    #    - hawaii-terminal
+    #    - swordfish
+        - eyesight
+        - hawaii-2048
 
     PostScripts:
         - rpm-rebuilddb.post
