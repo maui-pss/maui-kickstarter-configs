@@ -21,6 +21,7 @@ Maui:
         - hawaii
         - hawaii-mw
         - kf5
+        - plasma5
         - ux-plasma
 
     Groups:
@@ -146,6 +147,12 @@ Maui:
     #    - swordfish
         - eyesight
         - hawaii-2048
+
+    # Plasma
+        - kde5-cli-tools
+        - kde5-plasma-desktop
+        - kde5-plasma-workspace
+        - kde5-systemsettings
 
     PostScripts:
         - rpm-rebuilddb.post
