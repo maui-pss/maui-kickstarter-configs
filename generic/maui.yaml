@@ -48,6 +48,7 @@ Maui:
     #    - yum
         - systemd-analyze
         - python
+        - lz4
 
     # Some fonts
         - liberation-fonts-common
@@ -126,9 +127,14 @@ Maui:
 
     # Maui
         - maui-release
-        - plymouth-lite
         - maui-splashscreen
         - maui-sddm-themes
+        - plymouth
+        - plymouth-theme-fade-in
+        - plymouth-theme-script
+        - plymouth-theme-solar
+        - plymouth-theme-spinfinity
+        - plymouth-theme-spinner
 
     # Others
         - accountsservice
@@ -159,6 +165,7 @@ Maui:
         - scripts/tty2-session.post
         - scripts/enable-fuse.post
         - scripts/services.post
+        - scripts/plymouth-theme.post
 
     NoChrootScripts:
         - scripts/img-name.post
