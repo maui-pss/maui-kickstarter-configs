@@ -14,24 +14,12 @@ Repositories:
       Url: http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
       Options: --debuginfo
 
-    - Name: mer-updates
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mer-updates/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
-
-    - Name: mer-extra-updates
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mer-extra-updates/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
-
     - Name: maui
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
     - Name: hawaii
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
-
-    - Name: hawaii-mw
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/mw/@MER_RELEASE@_@ARCH@/
       Options: --debuginfo
 
     - Name: kf5
