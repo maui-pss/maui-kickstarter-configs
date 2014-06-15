@@ -81,13 +81,13 @@ Maui:
         - qt5-qtwidgets
         - qt5-qtxml
         - qt5-qtgraphicaleffects
-        - qt5-qtlocation
-        - qt5-qtpositioning
-        - qt5-plugin-geoservices-nokia
-        - qt5-plugin-geoservices-osm
-        - qt5-plugin-position-poll
-        - qt5-qtdeclarative-import-location
-        - qt5-qtdeclarative-import-positioning
+#        - qt5-qtlocation
+#        - qt5-qtpositioning
+#        - qt5-plugin-geoservices-nokia
+#        - qt5-plugin-geoservices-osm
+#        - qt5-plugin-position-poll
+#        - qt5-qtdeclarative-import-location
+#        - qt5-qtdeclarative-import-positioning
         - qt5-qtmultimedia
         - qt5-qtmultimedia-gsttools
         - qt5-qtmultimedia-plugin-audio-pulseaudio
