@@ -12,7 +12,6 @@ Maui:
     RepositoryOptions: --save --debuginfo --source
     Repos:
         - mer-core
-        - mer-core-debug
         - mer-devel
         - mer-tools
         - maui
