@@ -3,6 +3,6 @@ Maui x86 Adaptation LiveCD:
     Inherit:
         - Maui x86 Common
     BootloaderTimeout: 100
-    BootloaderOptions: --menu="autoinst:Installation:systemd.unit=installer-shell.service;rescue:Rescue:systemd.unit=rescue.service"
+    BootloaderOptions: vga=792
     PostScripts:
         - scripts/services-x86-livecd.post
