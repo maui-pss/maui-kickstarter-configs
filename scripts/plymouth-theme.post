@@ -3,6 +3,5 @@
 echo "--- plymouth-theme.post"
 
 /usr/sbin/plymouth-set-default-theme solar
-ln -sf /usr/share/plymouth/themes/solar/solar.plymouth /usr/share/plymouth/themes/default.plymouth
 
 ## end plymouth-theme.post
