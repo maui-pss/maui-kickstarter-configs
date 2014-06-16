@@ -1,7 +1,0 @@
-## plymouth-theme.post from maui-kickstarter-configs package
-
-echo "--- plymouth-theme.post"
-
-/usr/sbin/plymouth-set-default-theme solar
-
-## end plymouth-theme.post
