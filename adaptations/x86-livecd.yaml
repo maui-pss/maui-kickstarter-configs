@@ -2,7 +2,6 @@ Maui x86 Adaptation LiveCD:
     Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
-    BootloaderTimeout: 100
     BootloaderOptions: vga=792
     PostScripts:
         - scripts/services-x86-livecd.post

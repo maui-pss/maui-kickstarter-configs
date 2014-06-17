@@ -7,6 +7,8 @@ Maui:
     DefaultUser: maui
     DefaultUserPass: maui
 
+    BootloaderTimeout: 10
+
     Active: True
 
     RepositoryOptions: --save --debuginfo --source

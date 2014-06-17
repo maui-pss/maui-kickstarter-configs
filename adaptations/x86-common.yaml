@@ -3,7 +3,6 @@ Maui x86 Common:
     FileSystem: ext3
     Boolloader: True
     BootloaderAppend: "quiet"
-    BootloaderTimeout: 0
     StartX: True
     Repos:
         - hawaii-hw-x86-x86-common
