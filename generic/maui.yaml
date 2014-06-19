@@ -127,6 +127,7 @@ Maui:
         - maui-release
         - maui-logos
         - maui-sddm-themes
+        - maui-settings-system
         - maui-settings-plymouth
 
     # Others
