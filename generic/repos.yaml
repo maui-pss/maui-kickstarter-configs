@@ -1,11 +1,11 @@
 Repositories:
     - Name: mer-core
       Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
-      Options: --debuginfo
+      Options: --debuginfo --priority 3
 
     - Name: mer-devel
       Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
-      Options: --debuginfo
+      Options: --debuginfo --priority 2
 
     - Name: mer-tools
       Url: http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
@@ -13,7 +13,7 @@ Repositories:
 
     - Name: maui
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
+      Options: --debuginfo --priority 1
 
     - Name: hawaii
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
