@@ -1,35 +1,30 @@
 Repositories:
     - Name: mer-core
       Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
-      Options: --debuginfo --priority 3
+      Options: --priority 3
 
     - Name: mer-devel
       Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
-      Options: --debuginfo --priority 2
+      Options: --priority 2
 
     - Name: mer-tools
       Url: http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
-      Options: --debuginfo
 
     - Name: maui
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo --priority 1
+      Options: --priority 1
 
     - Name: hawaii
       Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
 
     - Name: kf5
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/kf5/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
 
     - Name: plasma5
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/plasma5/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
 
     - Name: ux-plasma
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/plasma/@MER_RELEASE@_@ARCH@/
-      Options: --debuginfo
 
 # Hardware adaptations
     - Name: hawaii-hw-x86-x86-common
