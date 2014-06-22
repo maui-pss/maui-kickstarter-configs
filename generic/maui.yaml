@@ -149,10 +149,12 @@ Maui:
         - hawaii-2048
 
     # Plasma
+        - kde5-baseapps
         - kde5-cli-tools
         - kde5-plasma-desktop
         - kde5-plasma-workspace
         - kde5-systemsettings
+        - kscreen
 
     PostScripts:
         - rpm-rebuilddb.post
