@@ -5,7 +5,7 @@ Maui x86 Common:
     BootloaderAppend: "quiet"
     StartX: True
     Repos:
-        - hawaii-hw-x86-x86-common
+        - maui-hw-x86-x86-common
     ExtraPackages:
           - acpid
           - linux-firmware
