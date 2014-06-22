@@ -3,7 +3,7 @@ Maui:
     Keyboard: us
     Timezone: UTC
 
-    RootPass: maui
+    RootPass: ""
     DefaultUser: maui
     DefaultUserPass: maui
 
