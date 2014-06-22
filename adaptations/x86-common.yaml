@@ -2,7 +2,6 @@ Maui x86 Common:
     PartSize: 3000
     FileSystem: ext3
     Boolloader: True
-    BootloaderAppend: "quiet"
     StartX: True
     Repos:
         - maui-hw-x86-x86-common
