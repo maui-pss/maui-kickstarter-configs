@@ -8,9 +8,6 @@ Repositories:
       Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
       Options: --priority 2
 
-    - Name: mer-tools
-      Url: http://repo.merproject.org/releases/Mer-Tools/@MER_RELEASE@/builds/@ARCH@/packages/
-
     - Name: maui
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
       Options: --priority 1

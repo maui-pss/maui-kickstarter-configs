@@ -15,7 +15,6 @@ Maui:
     Repos:
         - mer-core
         - mer-devel
-        - mer-tools
         - maui
         - hawaii
         - kf5
