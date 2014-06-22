@@ -164,7 +164,7 @@ Maui:
 
     NoChrootScripts:
         - scripts/img-name.post
-        - scripts/sddm-theme.post
+        - scripts/sddm.post
 
 Maui Development:
     ExtraPackages:
