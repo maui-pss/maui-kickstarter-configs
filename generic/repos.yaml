@@ -1,9 +1,9 @@
 Repositories:
-    - Name: mer-core
+    - Name: core-release
       Url: http://build.maui-project.org/repos/mer-core/@BUILD_ID@/@ARCH@/packages
       Options: --priority 3
 
-    - Name: mer-devel
+    - Name: core-devel
       Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
       Options: --priority 2
 

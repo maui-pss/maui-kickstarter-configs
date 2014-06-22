@@ -13,8 +13,8 @@ Maui:
 
     RepositoryOptions: --save --debuginfo --source
     Repos:
-        - mer-core
-        - mer-devel
+        - core-release
+        - core-devel
         - maui
         - hawaii
         - kf5
