@@ -1,19 +1,16 @@
 Repositories:
-    - Name: core-release
-      Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
-      #Url: http://build.maui-project.org/repos/mer-core/@BUILD_ID@/@ARCH@/packages
-      Options: --priority 3
+    - Name: maui
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
+      Options: --priority 1
 
     - Name: core-devel
       Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
       Options: --priority 2
 
-    - Name: maui
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --priority 1
-
-    - Name: hawaii
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
+    - Name: core-release
+      Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
+      #Url: http://build.maui-project.org/repos/mer-core/@BUILD_ID@/@ARCH@/packages
+      Options: --priority 3
 
     - Name: kf5
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/kf5/@MER_RELEASE@_@ARCH@/
@@ -21,8 +18,14 @@ Repositories:
     - Name: plasma5
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/plasma5/@MER_RELEASE@_@ARCH@/
 
-    - Name: ux-plasma
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/plasma/@MER_RELEASE@_@ARCH@/
+    - Name: ux-hawaii
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/hawaii/@MER_RELEASE@_@ARCH@/
+
+    - Name: apps
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/apps/@MER_RELEASE@_@ARCH@/
+
+    - Name: qa
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/qa/@MER_RELEASE@_@ARCH@/
 
 # Hardware adaptations
     - Name: maui-hw-x86-x86-common

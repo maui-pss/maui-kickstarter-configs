@@ -5,29 +5,7 @@ Maui x86 Common:
     StartX: True
     Repos:
         - maui-hw-x86-x86-common
-    ExtraPackages:
-          - acpid
-          - linux-firmware
-          - installer-shell
-          - mesa-x86-generic-libEGL
-          - mesa-x86-generic-libGLESv2
-          - mesa-x86-generic-libgbm
-          - mesa-x86-generic-libglapi
-          - mesa-x86-generic-libwayland-egl
-          - mesa-x86-generic-dri-i965-driver
-          - mesa-x86-generic-dri-i915-driver
-          - mesa-x86-generic-dri-ati-driver
-          - mesa-x86-generic-dri-nouveau-driver
-          - mesa-x86-generic-dri-svga-driver
-          - mesa-x86-generic-dri-swrast-driver
-          - libdrm-radeon
-          - libdrm-nouveau
-          - libdrm-intel
-          - xorg-x11-drv-intel
-          - xorg-x11-drv-nouveau
-          - xorg-x11-drv-vmmouse
-          - xorg-x11-drv-vmware
-          - qt5-plugin-generic-evdev
-          - qt5-plugin-platform-eglfs
-          - qt5-plugin-platform-kms
-          - qt5-qtwayland-wayland_egl
+    Groups:
+          - x86 Common
+          - x86 Generic Support
+          - x86 VM Support
