@@ -20,7 +20,11 @@ Maui x86 Common:
           - mesa-x86-generic-dri-nouveau-driver
           - mesa-x86-generic-dri-svga-driver
           - mesa-x86-generic-dri-swrast-driver
+          - libdrm-radeon
+          - libdrm-nouveau
+          - libdrm-intel
           - xorg-x11-drv-intel
+          - xorg-x11-drv-nouveau
           - xorg-x11-drv-vmmouse
           - xorg-x11-drv-vmware
           - qt5-plugin-generic-evdev
