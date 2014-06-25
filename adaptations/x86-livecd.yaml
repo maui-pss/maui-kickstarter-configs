@@ -2,5 +2,7 @@ Maui x86 Adaptation LiveCD:
     Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
+    Groups:
+          - x86 LiveCD Support
     PostScripts:
         - scripts/services-x86-livecd.post
