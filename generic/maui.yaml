@@ -20,23 +20,14 @@ Maui:
         - plasma5
 
     Groups:
-        - Maui Base
-        - Maui Fonts
-        - Qt 5 Complete
+        - Maui
         - Plasma Desktop UX
         - KDE 5 Core Apps
 
     ExtraPackages:
-    # Base
         - -ed
         - -vi
-
-    # Maui
         - maui-sddm-themes
-
-    # Others
-        - accountsservice
-        - avahi
         - sddm
 
     PostScripts:
