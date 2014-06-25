@@ -9,8 +9,6 @@ Maui:
 
     BootloaderTimeout: 10
 
-    Active: True
-
     RepositoryOptions: --save --debuginfo --source
     Repos:
         - core-release
