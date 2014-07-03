@@ -7,6 +7,7 @@ ExternalConfigs:
 Configurations:
     - Name: Maui Runtime x86
       FileName: maui-runtime-x86
+      Active: False
       Architecture: i686
       RepositoryArchitecture: i586
       BootloaderTimeout: 0
@@ -20,6 +21,7 @@ Configurations:
 
     - Name: Maui Runtime x86_64
       FileName: maui-runtime-x86_64
+      Active: False
       Architecture: x86_64
       RepositoryArchitecture: x86_64
       BootloaderTimeout: 0
@@ -33,6 +35,7 @@ Configurations:
 
     - Name: Maui Development x86
       FileName: maui-devel-x86
+      Active: False
       Architecture: i686
       RepositoryArchitecture: i586
       BootloaderTimeout: 0
@@ -46,6 +49,7 @@ Configurations:
 
     - Name: Maui Development x86_64
       FileName: maui-devel-x86_64
+      Active: False
       Architecture: x86_64
       RepositoryArchitecture: x86_64
       BootloaderTimeout: 0
@@ -59,6 +63,7 @@ Configurations:
 
     - Name: Maui x86 Virtual Machine
       FileName: maui-x86-vm
+      Active: True
       Architecture: i686
       RepositoryArchitecture: i586
       Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86-vm.log
@@ -73,6 +78,7 @@ Configurations:
 
     - Name: Maui x86_64 Virtual Machine
       FileName: maui-x86_64-vm
+      Active: True
       Architecture: x86_64
       RepositoryArchitecture: x86_64
       Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86_64-vm.log
@@ -87,6 +93,7 @@ Configurations:
 
     - Name: Maui x86 Live CD
       FileName: maui-x86-livecd
+      Active: True
       Architecture: i686
       RepositoryArchitecture: i586
       Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86-livecd.log
@@ -99,6 +106,7 @@ Configurations:
 
     - Name: Maui x86_64 LiveCD
       FileName: maui-x86_64-livecd
+      Active: True
       Architecture: x86_64
       RepositoryArchitecture: x86_64
       Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86_64-livecd.log
@@ -111,6 +119,7 @@ Configurations:
 
     - Name: Maui Adaptation Raspberry Pi
       FileName: maui-armv6l-rpi
+      Active: False
       Architecture: armv6l
       RepositoryArchitecture: armv6l
       BootloaderTimeout: 0
@@ -121,6 +130,7 @@ Configurations:
 
     - Name: Maui Adaptation Google Nexus7
       FileName: maui-armv7hl-google-nexus7
+      Active: False
       Architecture: armv7hl
       RepositoryArchitecture: armv7hl
       Inherit:

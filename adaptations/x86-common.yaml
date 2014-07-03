@@ -2,27 +2,10 @@ Maui x86 Common:
     PartSize: 3000
     FileSystem: ext3
     Boolloader: True
-    BootloaderAppend: "quiet"
-    BootloaderTimeout: 0
     StartX: True
     Repos:
-        - hawaii-hw-x86-x86-common
-    ExtraPackages:
-          - acpid
-          - linux-firmware
-          - installer-shell
-          - mesa-x86-generic-libEGL
-          - mesa-x86-generic-libGLESv2
-          - mesa-x86-generic-libgbm
-          - mesa-x86-generic-libglapi
-          - mesa-x86-generic-libwayland-egl
-          - mesa-x86-generic-dri-i965-driver
-          - mesa-x86-generic-dri-i915-driver
-          - mesa-x86-generic-dri-ati-driver
-          - mesa-x86-generic-dri-nouveau-driver
-          - mesa-x86-generic-dri-svga-driver
-          - mesa-x86-generic-dri-swrast-driver
-          - qt5-plugin-generic-evdev
-          - qt5-plugin-platform-eglfs
-          - qt5-plugin-platform-kms
-          - qt5-qtwayland-wayland_egl
+        - maui-hw-x86-x86-common
+    Groups:
+          - x86 Common
+          - x86 Generic Support
+          - x86 VM Support

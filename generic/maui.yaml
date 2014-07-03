@@ -3,144 +3,31 @@ Maui:
     Keyboard: us
     Timezone: UTC
 
-    RootPass: maui
+    RootPass: ""
     DefaultUser: maui
     DefaultUserPass: maui
 
-    Active: True
+    BootloaderTimeout: 10
 
     RepositoryOptions: --save --debuginfo --source
     Repos:
-        - mer-core
-        - mer-core-debug
-        - mer-devel
-        - mer-updates
-        - mer-extra-updates
-        - mer-tools
+        - core-release
+        - core-devel
         - maui
-        - hawaii
-        - hawaii-mw
+        - kf5
+        - ux-hawaii
+        - apps
 
     Groups:
-        - Mer Core
-        - Mer Core Utils
-        - Mer Connectivity
+        - Maui
+        - Hawaii Desktop Environment
 
     ExtraPackages:
-    # Base
-        - iproute
-        - parted
-        - openssh-clients
-        - openssh-server
-        - tar
-        - rsync
-        - fuse
-        - nano
-        - less
         - -ed
         - -vi
-        - vim-enhanced
-        - vim-minimal
-    #    - yum
-        - systemd-analyze
-        - python
-
-    # Some fonts
-        - liberation-fonts-common
-        - liberation-mono-fonts
-        - liberation-sans-fonts
-        - liberation-serif-fonts
-        - droid-sans-fonts
-        - droid-sans-mono-fonts
-        - droid-serif-fonts
-
-    # Qt 5
-        - qt5-default
-        - qt5-plugin-accessible-widgets
-        - qt5-plugin-bearer-connman
-        - qt5-plugin-imageformat-jpeg
-        - qt5-plugin-imageformat-gif
-        - qt5-plugin-imageformat-ico
-        - qt5-qtimageformats-plugin-mng
-        - qt5-qtimageformats-plugin-tga
-        - qt5-qtimageformats-plugin-tiff
-        - qt5-qtimageformats-plugin-wbmp
-        - qt5-plugin-printsupport-cups
-        - qt5-plugin-sqldriver-sqlite
-        - qt5-qtconcurrent
-        - qt5-qtcore
-        - qt5-qtdbus
-        - qt5-qtgui
-        - qt5-qtnetwork
-        - qt5-qtopengl
-        - qt5-qtprintsupport
-        - qt5-qtsql
-        - qt5-qtwidgets
-        - qt5-qtxml
-        - qt5-qtgraphicaleffects
-        - qt5-qtlocation
-        - qt5-qtpositioning
-        - qt5-plugin-geoservices-nokia
-        - qt5-plugin-geoservices-osm
-        - qt5-plugin-position-poll
-        - qt5-qtdeclarative-import-location
-        - qt5-qtdeclarative-import-positioning
-        - qt5-qtmultimedia
-        - qt5-qtmultimedia-gsttools
-        - qt5-qtmultimedia-plugin-audio-pulseaudio
-        - qt5-qtmultimedia-plugin-mediaservice-gstaudiodecoder
-        - qt5-qtmultimedia-plugin-mediaservice-gstcamerabin
-        - qt5-qtmultimedia-plugin-mediaservice-gstmediacapture
-        - qt5-qtmultimedia-plugin-mediaservice-gstmediaplayer
-        - qt5-qtmultimedia-plugin-playlistformats-m3u
-        - qt5-qtdeclarative
-        - qt5-qtdeclarative-import-folderlistmodel
-        - qt5-qtdeclarative-import-localstorageplugin
-        - qt5-qtdeclarative-import-models2
-        - qt5-qtdeclarative-import-particles2
-        - qt5-qtdeclarative-import-qtquick2plugin
-        - qt5-qtdeclarative-import-settings
-        - qt5-qtdeclarative-import-window2
-        - qt5-qtdeclarative-import-xmllistmodel
-        - qt5-qtdeclarative-plugin-accessible
-        - qt5-qtdeclarative-qmlscene
-        - qt5-qtdeclarative-qtquick
-        - qt5-qtdeclarative-tool-qml
-        - qt5-qtdeclarative-tool-qmlimportscanner
-        - qt5-qtdeclarative-pim-contacts
-        - qt5-qtdeclarative-pim-organizer
-        - qt5-qtpim-contacts
-        - qt5-qtpim-organizer
-        - qt5-qtpim-versit
-        - qt5-qtpim-versitorganizer
-        - qt5-qtquickcontrols
-        - qt5-qtsvg
-        - qt5-qtsvg-plugin-imageformat-svg
-        - qt5-qttools-qdbus
-
-    # Maui
-        - maui-release
-        - plymouth-lite
-        - maui-splashscreen
         - maui-sddm-themes
-
-    # Others
-        - accountsservice
-        - avahi
         - sddm
-
-    # Hawaii
-        - fluid
-        - greenisland
-        - hawaii-wallpapers
-        - hawaii-icon-theme
-        - hawaii-shell
-        - hawaii-system-preferences
-        - hawaii-widget-styles
-    #    - hawaii-terminal
-    #    - swordfish
-        - eyesight
-        - hawaii-2048
+        - qconnman-ui
 
     PostScripts:
         - rpm-rebuilddb.post
@@ -150,7 +37,7 @@ Maui:
 
     NoChrootScripts:
         - scripts/img-name.post
-        - scripts/sddm-theme.post
+        - scripts/sddm.post
 
 Maui Development:
     ExtraPackages:
