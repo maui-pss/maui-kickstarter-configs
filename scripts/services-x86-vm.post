@@ -2,8 +2,6 @@
 
 echo "--- services-x86-vm.post"
 
-systemctl set-default -f graphical.target
-
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl enable accounts-daemon.service

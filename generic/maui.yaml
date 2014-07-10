@@ -9,6 +9,8 @@ Maui:
 
     BootloaderTimeout: 10
 
+    Desktop: plasma
+
     RepositoryOptions: --save --debuginfo --source
     Repos:
         - core-release

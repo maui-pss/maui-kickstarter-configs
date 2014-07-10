@@ -2,8 +2,6 @@
 
 echo "--- services-x86-livecd.post"
 
-systemctl set-default -f graphical.target
-
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl mask sshd-keys.service
