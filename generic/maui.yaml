@@ -21,7 +21,7 @@ Maui:
 
     Groups:
         - Maui
-        - Plasma Desktop UX
+        - Plasma 5 Desktop UX
         - KDE 5 Core Apps
 
     ExtraPackages:
