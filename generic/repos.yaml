@@ -18,6 +18,9 @@ Repositories:
     - Name: plasma5
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/plasma5/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-common-ux
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux/@MER_RELEASE@_@ARCH@/
+
     - Name: ux-hawaii
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/hawaii/@MER_RELEASE@_@ARCH@/
 

@@ -19,6 +19,7 @@ Maui:
         - maui
         - kf5
         - plasma5
+        - maui-common-ux
 
     Groups:
         - Maui
