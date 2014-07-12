@@ -24,6 +24,9 @@ Repositories:
     - Name: ux-hawaii
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/hawaii/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-desktop-ux
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/desktop/@MER_RELEASE@_@ARCH@/
+
     - Name: apps
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/apps/@MER_RELEASE@_@ARCH@/
 

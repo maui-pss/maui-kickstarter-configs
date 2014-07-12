@@ -20,17 +20,16 @@ Maui:
         - kf5
         - plasma5
         - maui-common-ux
+        - maui-desktop-ux
 
     Groups:
         - Maui
-        - Plasma 5 Desktop UX
+        - Hawaii Desktop UX
         - KDE 5 Core Apps
 
     ExtraPackages:
         - -ed
         - -vi
-        - maui-sddm-themes
-        - sddm
 
     PostScripts:
         - rpm-rebuilddb.post
