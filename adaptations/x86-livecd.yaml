@@ -5,5 +5,7 @@ Maui x86 Adaptation LiveCD:
 # This would pull synaptics in but it sucks
 #    Groups:
 #          - x86 LiveCD Support
+    ExtraPackages:
+        - installer-shell
     PostScripts:
         - scripts/services-x86-livecd.post
