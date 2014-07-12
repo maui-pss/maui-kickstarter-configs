@@ -4,8 +4,9 @@ Maui:
     Timezone: UTC
 
     RootPass: ""
-    DefaultUser: maui
-    DefaultUserPass: maui
+    DefaultUser: "live"
+    DefaultUserGecos: "Live session user"
+    DefaultUserPass: "live"
 
     BootloaderTimeout: 10
 
