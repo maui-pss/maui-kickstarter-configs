@@ -3,5 +3,6 @@
 echo "--- sddm.post"
 
 sed -i "s/CurrentTheme=.*/CurrentTheme=mauiproject/g" $INSTALL_ROOT/etc/sddm.conf
+sed -i "s/CursorTheme=.*/CursorTheme=maui/g" $INSTALL_ROOT/etc/sddm.conf
 
 ## end sddm.post
