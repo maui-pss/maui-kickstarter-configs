@@ -66,7 +66,7 @@ Configurations:
       Active: True
       Architecture: i686
       RepositoryArchitecture: i586
-      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86-vm.log
+      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-vm.log
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Kernel: kernel-adaptation-pc
@@ -81,7 +81,7 @@ Configurations:
       Active: True
       Architecture: x86_64
       RepositoryArchitecture: x86_64
-      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86_64-vm.log
+      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-vm.log
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Kernel: kernel-adaptation-pc
@@ -96,7 +96,7 @@ Configurations:
       Active: True
       Architecture: i686
       RepositoryArchitecture: i586
-      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86-livecd.log
+      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-livecd.log
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
@@ -109,7 +109,7 @@ Configurations:
       Active: True
       Architecture: x86_64
       RepositoryArchitecture: x86_64
-      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name --logfile=maui-x86_64-livecd.log
+      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-livecd.log
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
