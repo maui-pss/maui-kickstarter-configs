@@ -21,6 +21,7 @@ Maui:
         - maui-plasma5
         - maui-common-ux
         - maui-desktop-ux
+        - maui-sdk
 
     Groups:
         - Maui

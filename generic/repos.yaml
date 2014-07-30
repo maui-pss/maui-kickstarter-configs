@@ -33,6 +33,9 @@ Repositories:
     - Name: maui-qa
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/qa/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-sdk
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/sdk/@MER_RELEASE@_@ARCH@/
+
 # Hardware adaptations
     - Name: maui-hw-x86-x86-common
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
