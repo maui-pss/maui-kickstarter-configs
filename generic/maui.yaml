@@ -17,8 +17,8 @@ Maui:
         - core-release
         - core-devel
         - maui
-        - kf5
-        - plasma5
+        - maui-kf5
+        - maui-plasma5
         - maui-common-ux
         - maui-desktop-ux
 
