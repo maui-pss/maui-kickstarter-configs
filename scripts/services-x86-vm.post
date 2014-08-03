@@ -4,6 +4,7 @@ echo "--- services-x86-vm.post"
 
 systemctl mask connman-vpn.service
 systemctl mask ofono.service
+systemctl enable NetworkManager.service
 systemctl enable accounts-daemon.service
 systemctl enable sddm.service
 
