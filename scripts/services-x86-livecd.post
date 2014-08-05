@@ -2,7 +2,6 @@
 
 echo "--- services-x86-livecd.post"
 
-systemctl mask connman-vpn.service
 systemctl mask ofono.service
 systemctl mask sshd-keys.service
 systemctl disable systemd-networkd.service
