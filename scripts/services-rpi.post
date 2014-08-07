@@ -2,7 +2,6 @@
 
 echo "--- services-rpi.post"
 
-systemctl disable ofono.service
 systemctl disable wpa_supplicant.service
 systemctl disable bluetooth.target
 systemctl disable systemd-networkd.service
