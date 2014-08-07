@@ -2,5 +2,6 @@
 
 echo "--- tty2-session.post"
 
-ln -s /lib/systemd/system/getty@.service /lib/systemd/system/getty.target.wants/getty@tty2.service
+ln -s /usr/lib/systemd/system/getty@.service /usr/lib/systemd/system/getty.target.wants/getty@tty2.service
+
 ## end tty2-session.post
