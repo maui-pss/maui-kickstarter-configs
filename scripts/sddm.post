@@ -3,6 +3,7 @@
 echo "--- sddm.post"
 
 cat >> $INSTALL_ROOT/etc/sddm.conf <<EOF
+
 [Theme]
 Current=mauiproject
 CursorTheme=maui
