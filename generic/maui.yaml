@@ -28,6 +28,8 @@ Maui:
         - Hawaii Desktop UX
         - KDE 5 Core Apps
 
+    PackageArgs: excludedocs
+
     ExtraPackages:
         - -ed
         - -vi
