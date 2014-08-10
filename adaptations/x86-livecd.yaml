@@ -4,6 +4,7 @@ Maui x86 Adaptation LiveCD:
         - Maui x86 Common
     Groups:
           - x86 LiveCD Support
+    BootloaderAppend: liveimg
     ExtraPackages:
         - installer-shell
     PostScripts:
