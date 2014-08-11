@@ -21,12 +21,14 @@ Maui:
         - maui-plasma5
         - maui-common-ux
         - maui-desktop-ux
+        - maui-apps
         - maui-sdk
 
     Groups:
         - Maui
         - Hawaii Desktop UX
         - KDE 5 Core Apps
+        - Maui Desktop Apps
 
     ExtraPackages:
         - -ed
