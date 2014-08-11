@@ -2,6 +2,6 @@
 
 echo "--- tty2-session.post"
 
-ln -s /usr/lib/systemd/system/getty@.service /usr/lib/systemd/system/getty.target.wants/getty@tty2.service
+systemctl enable getty@tty2
 
 ## end tty2-session.post
