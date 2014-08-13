@@ -17,8 +17,7 @@ Maui:
         - core-release
         - core-devel
         - maui
-        - maui-kf5
-        - maui-plasma5
+        - maui-frameworks
         - maui-common-ux
         - maui-desktop-ux
         - maui-apps
@@ -27,7 +26,7 @@ Maui:
     Groups:
         - Maui
         - Hawaii Desktop UX
-        - KDE 5 Core Apps
+        - Plasma 5 Core Apps
         - Maui Desktop Apps
 
     ExtraPackages:
