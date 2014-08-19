@@ -7,5 +7,6 @@ Maui x86 Adaptation LiveCD:
     BootloaderAppend: liveimg
     ExtraPackages:
         - installer-shell
+        - maui-installer
     PostScripts:
         - scripts/services-x86-livecd.post
