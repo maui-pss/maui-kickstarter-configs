@@ -1,0 +1,7 @@
+## x86-livecd.post from maui-kickstarter-configs package
+
+cat > /etc/sudoers.d/00-live << EOF
+live ALL=(ALL) NOPASSWD: ALL
+EOF
+
+## end x86-livecd.post

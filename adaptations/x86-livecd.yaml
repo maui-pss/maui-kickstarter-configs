@@ -10,3 +10,4 @@ Maui x86 Adaptation LiveCD:
         - maui-installer
     PostScripts:
         - scripts/services-x86-livecd.post
+        - scripts/x86-livecd.post
