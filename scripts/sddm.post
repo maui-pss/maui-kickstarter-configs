@@ -1,8 +1,0 @@
-## sddm.post from maui-kickstarter-configs package
-
-echo "--- sddm.post"
-
-sed -i "s/CurrentTheme=.*/CurrentTheme=mauiproject/g" $INSTALL_ROOT/etc/sddm.conf
-sed -i "s/LastSession=.*/LastSession=plasma.desktop/g" $INSTALL_ROOT/etc/sddm.conf
-
-## end sddm.post

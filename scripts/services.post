@@ -3,4 +3,7 @@
 echo "--- services.post"
 
 systemctl enable avahi-daemon.service
+systemctl disable systemd-networkd.service
+systemctl disable systemd-resolved.service
+
 ## end services.post

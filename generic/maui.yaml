@@ -4,30 +4,33 @@ Maui:
     Timezone: UTC
 
     RootPass: ""
-    DefaultUser: maui
-    DefaultUserPass: maui
+    DefaultUser: "live"
+    DefaultUserGecos: "Live session user"
+    DefaultUserPass: "live"
 
     BootloaderTimeout: 10
 
+    Desktop: hawaii
+
     RepositoryOptions: --save --debuginfo --source
     Repos:
-        - core-release
         - core-devel
         - maui
-        - kf5
-        - ux-hawaii
-        - apps
+        - maui-frameworks
+        - maui-common-ux
+        - maui-desktop-ux
+        - maui-apps
+        - maui-sdk
 
     Groups:
         - Maui
-        - Hawaii Desktop Environment
+        - Hawaii Desktop UX
+        - Plasma 5 Core Apps
+        - Maui Desktop Apps
 
     ExtraPackages:
         - -ed
         - -vi
-        - maui-sddm-themes
-        - sddm
-        - qconnman-ui
 
     PostScripts:
         - rpm-rebuilddb.post
@@ -37,7 +40,6 @@ Maui:
 
     NoChrootScripts:
         - scripts/img-name.post
-        - scripts/sddm.post
 
 Maui Development:
     ExtraPackages:
