@@ -6,7 +6,7 @@ Maui:
     RootPass: ""
     DefaultUser: "live"
     DefaultUserGecos: "Live session user"
-    DefaultUserPass: "live"
+    DefaultUserPass: ""
 
     BootloaderTimeout: 10
 
