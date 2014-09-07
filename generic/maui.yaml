@@ -20,7 +20,7 @@ Maui:
         - maui-common-ux
         - maui-desktop-ux
         - maui-apps
-        - maui-sdk
+        - maui-tools
 
     Groups:
         - Maui
@@ -44,3 +44,47 @@ Maui:
 Maui Development:
     ExtraPackages:
         - llvm
+
+Maui SDK:
+    Language: en_US.UTF-8
+    Keyboard: us
+    Timezone: UTC
+
+    RootPass: ""
+    DefaultUser: "maui"
+    DefaultUserGecos: "SDK user"
+    DefaultUserPass: ""
+
+    BootloaderTimeout: 10
+
+    RepositoryOptions: --save --debuginfo --source
+    Repos:
+        - core-devel
+        - maui
+#        - maui-frameworks
+        - maui-common-ux
+#        - maui-desktop-ux
+#        - maui-apps
+        - maui-tools
+
+    Groups:
+        - Maui Base
+        - Maui Connectivity
+        - Maui Development Tools
+        - Maui Packaging
+#        - Maui Image Creation
+
+    ExtraPackages:
+        - -ed
+        - -vi
+        - net-tools
+        - sdk-chroot
+        - sdk-utils
+
+    PostScripts:
+        - rpm-rebuilddb.post
+        - scripts/tty2-session.post
+        - scripts/services.post
+
+    NoChrootScripts:
+        - scripts/img-name.post

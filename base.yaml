@@ -117,6 +117,33 @@ Configurations:
           - Maui x86 Adaptation LiveCD
           - SSSE3 enabled X86 architecture
 
+    ### SDK
+
+    - Name: Maui x86 SDK
+      FileName: maui-x86-sdk
+      Active: True
+      Architecture: i686
+      RepositoryArchitecture: i586
+      Mic2Options: -o . -f fs --pack-to=maui-x86-latest-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-sdk.log
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui SDK
+          - Maui x86 Common
+          - SSSE3 enabled X86 architecture
+
+    - Name: Maui x86_64 SDK
+      FileName: maui-x86_64-sdk
+      Active: True
+      Architecture: x86_64
+      RepositoryArchitecture: x86_64
+      Mic2Options: -o . -f fs --pack-to=maui-x86_64-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-sdk.log
+      Kernel: kernel-adaptation-pc
+      Part: x86.partition
+      Inherit:
+          - Maui SDK
+          - Maui x86 Common
+
     - Name: Maui Adaptation Raspberry Pi
       FileName: maui-armv6l-rpi
       Active: False
