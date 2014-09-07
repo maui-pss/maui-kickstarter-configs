@@ -77,14 +77,14 @@ Maui SDK:
     ExtraPackages:
         - -ed
         - -vi
+        - NetworkManager
         - net-tools
         - sdk-chroot
         - sdk-utils
 
     PostScripts:
         - rpm-rebuilddb.post
-        - scripts/tty2-session.post
-        - scripts/services.post
+        - scripts/sdk.post
 
     NoChrootScripts:
         - scripts/img-name.post
