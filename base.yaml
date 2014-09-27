@@ -4,61 +4,63 @@ ExternalConfigs:
    - scripts
 
 Configurations:
-    - Name: Maui Runtime x86
-      FileName: maui-runtime-x86
-      Active: False
-      Architecture: i686
-      RepositoryArchitecture: i586
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
-      Inherit:
-          - Maui
-          - Maui OSTree Runtime x86
-          - SSSE3 enabled X86 architecture
+#    - Name: Maui Runtime x86
+#      FileName: maui-runtime-x86
+#      Active: False
+#      Architecture: i686
+#      RepositoryArchitecture: i586
+#      BootloaderTimeout: 0
+#      BootloaderOptions: "quiet"
+#      Kernel: kernel-adaptation-pc
+#      Part: x86.partition
+#      Inherit:
+#          - Maui
+#          - Maui OSTree Runtime x86
+#          - SSSE3 enabled X86 architecture
+#
+#    - Name: Maui Runtime x86_64
+#      FileName: maui-runtime-x86_64
+#      Active: False
+#      Architecture: x86_64
+#      RepositoryArchitecture: x86_64
+#      BootloaderTimeout: 0
+#      BootloaderOptions: "quiet"
+#      Kernel: kernel-adaptation-pc
+#      Part: x86.partition
+#      Inherit:
+#          - Maui
+#          - Maui OSTree Runtime x86_64
+#          - SSSE3 enabled X86 architecture
+#
+#    - Name: Maui Development x86
+#      FileName: maui-devel-x86
+#      Active: False
+#      Architecture: i686
+#      RepositoryArchitecture: i586
+#      BootloaderTimeout: 0
+#      BootloaderOptions: "quiet"
+#      Kernel: kernel-adaptation-pc
+#      Part: x86.partition
+#      Inherit:
+#          - Maui
+#          - Maui OSTree Development x86
+#          - SSSE3 enabled X86 architecture
+#
+#    - Name: Maui Development x86_64
+#      FileName: maui-devel-x86_64
+#      Active: False
+#      Architecture: x86_64
+#      RepositoryArchitecture: x86_64
+#      BootloaderTimeout: 0
+#      BootloaderOptions: "quiet"
+#      Kernel: kernel-adaptation-pc
+#      Part: x86.partition
+#      Inherit:
+#          - Maui
+#          - Maui OSTree Development x86_64
+#          - SSSE3 enabled X86 architecture
 
-    - Name: Maui Runtime x86_64
-      FileName: maui-runtime-x86_64
-      Active: False
-      Architecture: x86_64
-      RepositoryArchitecture: x86_64
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
-      Inherit:
-          - Maui
-          - Maui OSTree Runtime x86_64
-          - SSSE3 enabled X86 architecture
-
-    - Name: Maui Development x86
-      FileName: maui-devel-x86
-      Active: False
-      Architecture: i686
-      RepositoryArchitecture: i586
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
-      Inherit:
-          - Maui
-          - Maui OSTree Development x86
-          - SSSE3 enabled X86 architecture
-
-    - Name: Maui Development x86_64
-      FileName: maui-devel-x86_64
-      Active: False
-      Architecture: x86_64
-      RepositoryArchitecture: x86_64
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
-      Inherit:
-          - Maui
-          - Maui OSTree Development x86_64
-          - SSSE3 enabled X86 architecture
+    ### PC
 
     - Name: Maui x86 Virtual Machine
       FileName: maui-x86-vm
@@ -143,6 +145,8 @@ Configurations:
           - Maui SDK
           - Maui x86 Common
 
+    ### ARM boards
+
     - Name: Maui Adaptation Raspberry Pi
       FileName: maui-armv6l-rpi
       Active: False
@@ -153,6 +157,8 @@ Configurations:
       Inherit:
           - Maui
           - Maui Adaptation Raspberry Pi
+
+    ### ARM tablets
 
     - Name: Maui Adaptation Google Nexus7
       FileName: maui-armv7hl-google-nexus7
