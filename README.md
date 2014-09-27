@@ -4,7 +4,6 @@ Kickstarter configuration for Maui
 This is the maui-kickstarter configuration for Maui and requires:
 
 * Mer SDK
-* mer-kickstarter-configs >= 0.3.1 installed in Mer SDK
 * maui-kickstarter >= 0.99.0 installed in Mer SDK
 * maui-mic-plugins installed in Mer SDK
 
@@ -23,7 +22,7 @@ sudo zypper ar -G -f http://repo.merproject.org/obs/home:/plfiorini:/maui:/devel
 2) Install the packages:
 
 ```sh
-sudo zypper install maui-kickstarter mer-kickstarter-configs maui-mic-plugins
+sudo zypper install maui-kickstarter maui-mic-plugins
 ```
 
 2) Clone the git tree:

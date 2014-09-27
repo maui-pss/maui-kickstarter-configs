@@ -1,5 +1,4 @@
 ExternalConfigs:
-   - /usr/share/kickstarter-configs/mer
    - generic
    - adaptations
    - scripts
