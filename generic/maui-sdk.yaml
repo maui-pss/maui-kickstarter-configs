@@ -1,46 +1,43 @@
-Maui:
+Maui SDK:
     Language: en_US.UTF-8
     Keyboard: us
     Timezone: UTC
 
     RootPass: ""
-    DefaultUser: "live"
-    DefaultUserGecos: "Live session user"
+    DefaultUser: "maui"
+    DefaultUserGecos: "SDK user"
     DefaultUserPass: ""
 
     BootloaderTimeout: 10
-
-    Desktop: hawaii
 
     RepositoryOptions: --save --debuginfo --source
     Repos:
         - core-devel
         - maui
-        - maui-frameworks
+#        - maui-frameworks
         - maui-common-ux
-        - maui-desktop-ux
-        - maui-apps
+#        - maui-desktop-ux
+#        - maui-apps
         - maui-tools
 
     Groups:
-        - Maui
-        - Hawaii Desktop UX
-        - Plasma 5 Core Apps
-        - Maui Desktop Apps
+        - Maui Base
+        - Maui Connectivity
+        - Maui Development Tools
+        - Maui Packaging
+#        - Maui Image Creation
 
     ExtraPackages:
         - -ed
         - -vi
+        - NetworkManager
+        - net-tools
+        - sdk-chroot
+        - sdk-utils
 
     PostScripts:
         - rpm-rebuilddb.post
-        - scripts/tty2-session.post
-        - scripts/enable-fuse.post
-        - scripts/services.post
+        - scripts/sdk.post
 
     NoChrootScripts:
         - scripts/img-name.post
-
-Maui Development:
-    ExtraPackages:
-        - llvm
