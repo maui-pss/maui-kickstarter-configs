@@ -158,6 +158,26 @@ Configurations:
           - Maui
           - Maui Adaptation Raspberry Pi
 
+    ### ARM phones
+
+    - Name: Maui Adaptation Google Nexus 4
+      FileName: maui-armv7hl-google-nexus4
+      Active: False
+      Architecture: armv7hl
+      RepositoryArchitecture: armv7hl
+      Inherit:
+          - Maui
+          - Maui Adaptation Google Nexus 4
+
+    - Name: Maui Adaptation Google Nexus 5
+      FileName: maui-armv7hl-google-nexus5
+      Active: False
+      Architecture: armv7hl
+      RepositoryArchitecture: armv7hl
+      Inherit:
+          - Maui
+          - Maui Adaptation Google Nexus 5
+
     ### ARM tablets
 
     - Name: Maui Adaptation Google Nexus7

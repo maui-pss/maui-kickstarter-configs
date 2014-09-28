@@ -37,11 +37,23 @@ Repositories:
     - Name: maui-hw-x86-x86-common
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
 
-    - Name: hawaii-hw-brcm-bcm2835-rpi
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/brcm:/bcm2835:/rpi/@MER_RELEASE@_@ARCH@/
+    - Name: maui-hw-brcm-bcm2835-rpi
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/brcm:/bcm2835:/rpi/@MER_RELEASE@_@ARCH@/
 
-    - Name: hawaii-hw-nv-tegra3-common
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/nv:/tegra3:/common/@MER_RELEASE@_@ARCH@/
+    - Name: maui-hw-nv-tegra3-common
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/nv:/tegra3:/common/@MER_RELEASE@_@ARCH@/
 
-    - Name: hawaii-hw-nv-tegra3-nexus7
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/hawaii:/@FLAVOUR@:/hw:/nv:/tegra3:/nexus7/@MER_RELEASE@_@ARCH@/
+    - Name: maui-hw-nv-tegra3-nexus7
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/nv:/tegra3:/nexus7/@MER_RELEASE@_@ARCH@/
+
+    - Name: maui-hw-droid-tools
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/droid:/tools/@MER_RELEASE@_@ARCH@/
+
+    - Name: maui-hw-lge-mako
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/mako/@MER_RELEASE@_@ARCH@/
+
+    - Name: maui-hw-lge-hammerhead
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/hammerhead/@MER_RELEASE@_@ARCH@/
+
+    - Name: maui-hw-lge-hammerhead-dhd
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/hammerhead:/dhd/@MER_RELEASE@_@ARCH@/

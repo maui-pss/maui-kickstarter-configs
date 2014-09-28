@@ -1,0 +1,11 @@
+Maui Adaptation Google Nexus4:
+    Part: google-nexus4.partition
+    Kernel: kernel-adaptation-google-nexus4
+    Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus4-build.log
+    Inherit:
+        - Maui Adaptation Nexus 4
+    Repos:
+        - maui-hw-lge-mako
+    ##ExtraPackages:
+    PostScripts:
+        - scripts/arch-armv7hl.post

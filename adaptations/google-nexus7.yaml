@@ -5,7 +5,7 @@ Maui Adaptation Google Nexus7:
     Inherit:
         - Maui Adaptation Tegra3 Common
     Repos:
-        - hawaii-hw-nv-tegra3-nexus7
+        - maui-hw-nv-tegra3-nexus7
     ExtraPackages:
         - config-nexus7
         - moslo-nexus7
