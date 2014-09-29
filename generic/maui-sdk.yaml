@@ -19,6 +19,7 @@ Maui SDK:
 #        - maui-desktop-ux
 #        - maui-apps
         - maui-tools
+        - maui-hw-droid-tools
 
     Groups:
         - Maui Base
