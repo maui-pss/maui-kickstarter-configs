@@ -1,9 +1,9 @@
 Maui Adaptation Google Nexus5:
     Part: google-nexus5.partition
     Kernel: droid-hal-hammerhead-kernel
-    Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus5-build.log
+    Mic2Options: -o . -f fs --compress-disk-image=tar.bz2 --copy-kernel --pkgmgr=zypp --record-pkgs=name --arch=armv7hl --logfile=maui-armv7hl-google-nexus5-build.log
     Inherit:
-        - Maui Adaptation Nexus 5
+        - ARMv7 hardfp architecture
     Repos:
         - maui-hw-droid-tools
         - maui-hw-lge-hammerhead

@@ -171,7 +171,7 @@ Configurations:
 
     - Name: Maui Adaptation Google Nexus 5
       FileName: maui-armv7hl-google-nexus5
-      Active: False
+      Active: True
       Architecture: armv7hl
       RepositoryArchitecture: armv7hl
       Inherit:
