@@ -14,10 +14,10 @@ Maui SDK:
     Repos:
         - core-devel
         - maui
-#        - maui-frameworks
+        - maui-frameworks
         - maui-common-ux
 #        - maui-desktop-ux
-#        - maui-apps
+        - maui-apps
         - maui-tools
         - maui-hw-droid-tools
 
