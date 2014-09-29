@@ -147,11 +147,9 @@ Configurations:
 
     ### ARM boards
 
-    - Name: Maui Adaptation Raspberry Pi
+    - Name: Maui for Raspberry Pi
       FileName: maui-armv6l-rpi
       Active: False
-      Architecture: armv6l
-      RepositoryArchitecture: armv6l
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Inherit:
@@ -176,11 +174,9 @@ Configurations:
 
     ### ARM tablets
 
-    - Name: Maui for Google Nexus7
+    - Name: Maui for Google Nexus 7
       FileName: maui-armv7hl-google-nexus7
       Active: False
-      Architecture: armv7hl
-      RepositoryArchitecture: armv7hl
       Inherit:
           - Maui
           - Maui Adaptation Google Nexus 7

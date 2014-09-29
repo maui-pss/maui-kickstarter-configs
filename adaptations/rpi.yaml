@@ -1,4 +1,6 @@
 Maui Adaptation Raspberry Pi:
+    Architecture: armv6l
+    RepositoryArchitecture: armv6l
     Part: rpi.partition
     Kernel: kernel-adaptation-rpi
     Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv6l-rpi-build.log
@@ -18,6 +20,6 @@ Maui Adaptation Raspberry Pi:
     #    - gst-oxm-rpi
     #    - qtplatformplugin-rpi
     PostScripts:
-        - arch-armv6l.post
+        - scripts/arch-armv6l.post
         - scripts/rpi-setup.post
-        - services-rpi.post
+        - scripts/services-rpi.post
