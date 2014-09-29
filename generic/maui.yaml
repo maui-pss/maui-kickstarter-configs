@@ -34,7 +34,7 @@ Maui:
         - -vi
 
     PostScripts:
-        - rpm-rebuilddb.post
+        - scripts/rpm-rebuilddb.post
         - scripts/tty2-session.post
         - scripts/enable-fuse.post
         - scripts/services.post

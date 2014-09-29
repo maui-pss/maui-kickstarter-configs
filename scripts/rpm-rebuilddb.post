@@ -1,0 +1,9 @@
+## rpm-rebuilddb.post from maui-kickstarter-configs package
+
+# Rebuild db using target's rpm
+echo -n "Rebuilding db using target rpm.."
+rm -f /var/lib/rpm/__db*
+rpm --rebuilddb
+echo "done"
+
+## end rpm-rebuilddb.post
