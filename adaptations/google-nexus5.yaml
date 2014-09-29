@@ -1,6 +1,6 @@
 Maui Adaptation Google Nexus5:
     Part: google-nexus5.partition
-    Kernel: kernel-adaptation-google-nexus7
+    Kernel: droid-hal-hammerhead-kernel
     Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus5-build.log
     Inherit:
         - Maui Adaptation Nexus 5
@@ -8,6 +8,18 @@ Maui Adaptation Google Nexus5:
         - maui-hw-droid-tools
         - maui-hw-lge-hammerhead
         - maui-hw-lge-hammerhead-dhd
-    ##ExtraPackages:
+    ExtraPackages:
+        - droid-hal-hammerhead
+        - droid-hal-hammerhead-kernel-modules
+#        - droid-hal-hammerhead-devel
+#        - droid-hal-hammerhead-policy-settings
+        - droid-hal-hammerhead-img-boot
+        - droid-hal-hammerhead-img-recovery
+#        - droid-hal-hammerhead-pulseaudio-settings
+#        - droid-hal-hammerhead-sailfish-config
+#        - pulseaudio-modules-droid
+#        - libhybris-*
+#        - ngfd-plugin-droid-vibrator
+#        - usb-moded*
     PostScripts:
         - scripts/arch-armv7hl.post
