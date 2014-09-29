@@ -16,6 +16,7 @@ Maui:
     Repos:
         - core-devel
         - maui
+        - maui-calamares
         - maui-frameworks
         - maui-common-ux
         - maui-desktop-ux
