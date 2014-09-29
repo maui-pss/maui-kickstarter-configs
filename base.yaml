@@ -160,31 +160,27 @@ Configurations:
 
     ### ARM phones
 
-    - Name: Maui Adaptation Google Nexus 4
+    - Name: Maui for Google Nexus 4
       FileName: maui-armv7hl-google-nexus4
       Active: False
-      Architecture: armv7hl
-      RepositoryArchitecture: armv7hl
       Inherit:
           - Maui
           - Maui Adaptation Google Nexus 4
 
-    - Name: Maui Adaptation Google Nexus 5
+    - Name: Maui for Google Nexus 5
       FileName: maui-armv7hl-google-nexus5
       Active: True
-      Architecture: armv7hl
-      RepositoryArchitecture: armv7hl
       Inherit:
           - Maui
           - Maui Adaptation Google Nexus 5
 
     ### ARM tablets
 
-    - Name: Maui Adaptation Google Nexus7
+    - Name: Maui for Google Nexus7
       FileName: maui-armv7hl-google-nexus7
       Active: False
       Architecture: armv7hl
       RepositoryArchitecture: armv7hl
       Inherit:
           - Maui
-          - Maui Adaptation Google Nexus7
+          - Maui Adaptation Google Nexus 7
