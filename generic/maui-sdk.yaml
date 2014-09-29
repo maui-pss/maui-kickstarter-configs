@@ -36,6 +36,7 @@ Maui SDK:
         - net-tools
         - sdk-chroot
         - sdk-utils
+        - android-tools
 
     PostScripts:
         - rpm-rebuilddb.post
