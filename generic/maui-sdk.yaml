@@ -25,7 +25,7 @@ Maui SDK:
         - Maui Connectivity
         - Maui Development Tools
         - Maui Packaging
-#        - Maui Image Creation
+        - Maui Image Creation
 
     ExtraPackages:
         - -ed
