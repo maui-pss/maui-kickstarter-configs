@@ -30,7 +30,8 @@ Maui SDK:
     ExtraPackages:
         - -ed
         - -vi
-        - NetworkManager
+        - -NetworkManager
+        - connman
         - net-tools
         - sdk-chroot
         - sdk-utils
