@@ -55,6 +55,9 @@ Repositories:
     - Name: maui-hw-lge-mako
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/mako/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-hw-lge-mako-dhd
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/mako:/dhd/@MER_RELEASE@_@ARCH@/
+
     - Name: maui-hw-lge-hammerhead
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/lge:/hammerhead/@MER_RELEASE@_@ARCH@/
 
