@@ -1,21 +1,41 @@
-Maui:
+Maui Core:
     Language: en_US.UTF-8
     Keyboard: us
     Timezone: UTC
 
     RootPass: ""
-    DefaultUser: "live"
-    DefaultUserGecos: "Live session user"
-    DefaultUserPass: ""
 
     BootloaderTimeout: 10
-
-    Desktop: hawaii
 
     RepositoryOptions: --save --debuginfo --source
     Repos:
         - core-devel
         - maui
+
+    Groups:
+        - Maui Core
+
+    ExtraPackages:
+        - -ed
+        - -vi
+
+    PostScripts:
+        - scripts/rpm-rebuilddb.post
+
+    NoChrootScripts:
+        - scripts/img-name.post
+
+Maui Desktop:
+    Inherit:
+        - Maui Core
+
+    DefaultUser: "live"
+    DefaultUserGecos: "Live session user"
+    DefaultUserPass: ""
+
+    Desktop: hawaii
+
+    Repos:
         - maui-calamares
         - maui-frameworks
         - maui-common-ux
@@ -29,18 +49,10 @@ Maui:
         - Plasma 5 Core Apps
         - Maui Desktop Apps
 
-    ExtraPackages:
-        - -ed
-        - -vi
-
     PostScripts:
-        - scripts/rpm-rebuilddb.post
         - scripts/tty2-session.post
         - scripts/enable-fuse.post
         - scripts/services.post
-
-    NoChrootScripts:
-        - scripts/img-name.post
 
 Maui Development:
     ExtraPackages:

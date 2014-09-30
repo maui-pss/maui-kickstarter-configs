@@ -73,7 +73,7 @@ Configurations:
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
-          - Maui
+          - Maui Desktop
           - Maui x86 Adaptation VM
           - SSSE3 enabled X86 architecture
 
@@ -88,7 +88,7 @@ Configurations:
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
-          - Maui
+          - Maui Desktop
           - Maui x86 Adaptation VM
           - SSSE3 enabled X86 architecture
 
@@ -101,7 +101,7 @@ Configurations:
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
-          - Maui
+          - Maui Desktop
           - Maui x86 Adaptation LiveCD
           - SSSE3 enabled X86 architecture
 
@@ -114,7 +114,7 @@ Configurations:
       Kernel: kernel-adaptation-pc
       Part: x86.partition
       Inherit:
-          - Maui
+          - Maui Desktop
           - Maui x86 Adaptation LiveCD
           - SSSE3 enabled X86 architecture
 
@@ -153,7 +153,7 @@ Configurations:
       BootloaderTimeout: 0
       BootloaderOptions: "quiet"
       Inherit:
-          - Maui
+          - Maui Core
           - Maui Adaptation Raspberry Pi
 
     ### ARM phones
@@ -162,14 +162,14 @@ Configurations:
       FileName: maui-armv7hl-google-nexus4
       Active: False
       Inherit:
-          - Maui
+          - Maui Core
           - Maui Adaptation Google Nexus 4
 
     - Name: Maui for Google Nexus 5
       FileName: maui-armv7hl-google-nexus5
       Active: True
       Inherit:
-          - Maui
+          - Maui Core
           - Maui Adaptation Google Nexus 5
 
     ### ARM tablets
@@ -178,5 +178,5 @@ Configurations:
       FileName: maui-armv7hl-google-nexus7
       Active: False
       Inherit:
-          - Maui
+          - Maui Core
           - Maui Adaptation Google Nexus 7
