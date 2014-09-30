@@ -1,6 +1,4 @@
 Maui Adaptation Google Nexus 5:
-    Architecture: armv7hl
-    RepositoryArchitecture: armv7hl
     Part: google-nexus5.partition
     Kernel: droid-hal-hammerhead-kernel
     Mic2Options: -o . -f fs --compress-disk-image=tar.bz2 --copy-kernel --pkgmgr=zypp --record-pkgs=name --arch=armv7hl --logfile=maui-armv7hl-google-nexus5-build.log
@@ -23,5 +21,3 @@ Maui Adaptation Google Nexus 5:
 #        - libhybris-*
 #        - ngfd-plugin-droid-vibrator
 #        - usb-moded*
-    PostScripts:
-        - scripts/arch-armv7hl.post

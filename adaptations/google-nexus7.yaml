@@ -1,15 +1,12 @@
 Maui Adaptation Google Nexus 7:
-    Architecture: armv7hl
-    RepositoryArchitecture: armv7hl
     Part: google-nexus7.partition
     Kernel: kernel-adaptation-google-nexus7
     Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus7-build.log
     Inherit:
+        - ARMv7 hardfp architecture
         - Maui Adaptation Tegra3 Common
     Repos:
         - maui-hw-nv-tegra3-nexus7
     ExtraPackages:
         - config-nexus7
         - moslo-nexus7
-    PostScripts:
-        - scripts/arch-armv7hl.post

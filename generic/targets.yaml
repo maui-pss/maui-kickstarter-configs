@@ -3,6 +3,7 @@ ARMv7 softfp architecture:
 
 ARMv7 hardfp architecture:
     Architecture: armv7hl
+    RepositoryArchitecture: armv7hl
     PostScripts:
         - scripts/arch-armv7hl.post
 

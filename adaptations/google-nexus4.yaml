@@ -1,6 +1,4 @@
 Maui Adaptation Google Nexus 4:
-    Architecture: armv7hl
-    RepositoryArchitecture: armv7hl
     Part: google-nexus4.partition
     Kernel: kernel-adaptation-google-nexus4
     Mic2Options: -o . -f fs --compress-disk-image=tar.bz2 --copy-kernel --pkgmgr=zypp --record-pkgs=name --arch=armv7hl --logfile=maui-armv7hl-google-nexus4-build.log
@@ -11,5 +9,3 @@ Maui Adaptation Google Nexus 4:
         - maui-hw-lge-mako
         - maui-hw-lge-mako-dhd
     ##ExtraPackages:
-    PostScripts:
-        - scripts/arch-armv7hl.post
