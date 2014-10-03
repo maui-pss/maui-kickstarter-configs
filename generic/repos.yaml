@@ -1,17 +1,4 @@
 Repositories:
-    - Name: maui
-      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@/@MER_RELEASE@_@ARCH@/
-      Options: --priority 1
-
-    - Name: core-devel
-      Url: http://repo.merproject.org/obs/mer-core:/@ARCH@:/@FLAVOUR@/Core_@ARCH@/
-      Options: --priority 2
-
-    - Name: core-release
-      #Url: http://releases.merproject.org/releases/@BUILD_ID@/builds/@ARCH@/packages
-      Url: http://build.maui-project.org/repos/mer-core/@BUILD_ID@/@ARCH@/packages
-      Options: --priority 3
-
     - Name: maui-core
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/@ARCH@/@MER_RELEASE@_@ARCH@/
 

@@ -9,8 +9,7 @@ Maui Core:
 
     RepositoryOptions: --save --debuginfo --source
     Repos:
-        - core-devel
-        - maui
+        - maui-core
 
     Groups:
         - Maui Core
