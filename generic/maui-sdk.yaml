@@ -19,13 +19,9 @@ Maui SDK:
         - maui-apps
         - maui-tools
         - maui-hw-x86-x86-common
-        - maui-hw-brcm-bcm2835-rpi
-#        - maui-hw-nv-tegra3-common
-#        - maui-hw-nv-tegra3-nexus7
         - maui-hw-droid-tools
-        - maui-hw-lge-mako
-        - maui-hw-lge-hammerhead
-        - maui-hw-lge-hammerhead-dhd
+#        - maui-hw-lge-mako-dhd
+#        - maui-hw-lge-hammerhead-dhd
 
     Groups:
         - Maui Base
