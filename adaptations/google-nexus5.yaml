@@ -21,6 +21,12 @@ Maui Adaptation Google Nexus 5:
 #        - libhybris-*
 #        - ngfd-plugin-droid-vibrator
 #        - usb-moded*
+    Attachment:
+        - /boot/hybris-boot.img
+        - /boot/hybris-updater-script
+        - /boot/hybris-updater-unpack.sh
+        - /boot/update-binary
+        - /etc/os-release
     PostScripts:
         - scripts/services-google-nexus5.post
         - scripts/google-nexus5.post
