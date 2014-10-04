@@ -162,14 +162,14 @@ Configurations:
       FileName: maui-armv7hl-google-nexus4
       Active: False
       Inherit:
-          - Maui Core
+          - Maui Mobile
           - Maui Adaptation Google Nexus 4
 
     - Name: Maui for Google Nexus 5
       FileName: maui-armv7hl-google-nexus5
       Active: True
       Inherit:
-          - Maui Core
+          - Maui Mobile
           - Maui Adaptation Google Nexus 5
 
     ### ARM tablets
@@ -178,5 +178,5 @@ Configurations:
       FileName: maui-armv7hl-google-nexus7
       Active: False
       Inherit:
-          - Maui Core
+          - Maui Mobile
           - Maui Adaptation Google Nexus 7

@@ -24,6 +24,17 @@ Maui Core:
     NoChrootScripts:
         - scripts/img-name.post
 
+Maui Mobile:
+    Inherit:
+        - Maui Core
+
+    DefaultUser: "maui"
+    DefaultUserGecos: "Maui user"
+    DefaultUserPass: ""
+
+    ExtraPackages:
+        - connman
+
 Maui Desktop:
     Inherit:
         - Maui Core
@@ -47,6 +58,9 @@ Maui Desktop:
         - Hawaii Desktop UX
         - Plasma 5 Core Apps
         - Maui Desktop Apps
+
+    ExtraPackages:
+        - NetworkManager
 
     PostScripts:
         - scripts/tty2-session.post
