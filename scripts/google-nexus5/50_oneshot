@@ -1,0 +1,22 @@
+### begin 50_oneshot
+
+echo "--- 50_oneshot"
+
+# Exit boostrap mode
+rm -f /.bootstrap
+ 
+# Export some important variables until there's a better solution
+export LANG=en_US.UTF-8
+export LC_COLLATE=en_US.UTF-8
+export GSETTINGS_BACKEND=gconf
+ 
+# Run the oneshot triggers for root and first user uid
+UID_MIN=$(grep "^UID_MIN" /etc/login.defs |  tr -s " " | cut -d " " -f2)
+DEVICEUSER=`getent passwd $UID_MIN | sed 's/:.*//'`
+ 
+if [ -x /usr/bin/oneshot ]; then
+     su -c "/usr/bin/oneshot --mic"
+     su -c "/usr/bin/oneshot --mic" $DEVICEUSER
+fi
+
+### end 50_oneshot
