@@ -7,7 +7,7 @@ Maui Adaptation Google Nexus 5:
     Repos:
         - maui-hw-droid-tools
         - maui-hw-lge-hammerhead
-        - maui-hw-lge-hammerhead-dhd
+#        - maui-hw-lge-hammerhead-dhd
     ExtraPackages:
         - droid-hal-hammerhead
         - droid-hal-hammerhead-kernel-modules
