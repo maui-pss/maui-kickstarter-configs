@@ -1,0 +1,12 @@
+## google-nexus5.post from maui-kickstarter-configs package
+
+echo "--- google-nexus5.post"
+
+# droid-hal-init is sometimes started before /system is mounted and
+# causes race condition with property service.
+# Symptom: you are stuck with a google logo
+sed -i "s;WantedBy;RequiredBy;g" /lib/systemd/system/system.mount
+echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
+echo "[Install]" >> /lib/systemd/system/local-fs.target
+
+## end google-nexus5.post

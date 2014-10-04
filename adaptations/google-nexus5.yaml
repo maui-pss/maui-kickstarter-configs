@@ -23,3 +23,4 @@ Maui Adaptation Google Nexus 5:
 #        - usb-moded*
     PostScripts:
         - scripts/services-google-nexus5.post
+        - scripts/google-nexus5.post
