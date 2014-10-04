@@ -1,0 +1,10 @@
+## services-google-nexus5.post from maui-kickstarter-configs package
+
+echo "--- services-google-nexus5.post"
+
+systemctl disable systemd-networkd.service
+systemctl disable systemd-resolved.service
+systemctl enable connman.service
+systemctl enable sshd.service
+
+## end services-google-nexus5.post

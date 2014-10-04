@@ -21,3 +21,5 @@ Maui Adaptation Google Nexus 5:
 #        - libhybris-*
 #        - ngfd-plugin-droid-vibrator
 #        - usb-moded*
+    PostScripts:
+        - scripts/services-google-nexus5.post
