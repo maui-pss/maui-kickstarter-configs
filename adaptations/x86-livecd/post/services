@@ -1,6 +1,6 @@
-## services-x86-livecd.post from maui-kickstarter-configs package
+## begin x86-livecd/post/services
 
-echo "--- services-x86-livecd.post"
+echo "--- x86-livecd/post/services"
 
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
@@ -8,4 +8,4 @@ systemctl enable NetworkManager.service
 systemctl enable accounts-daemon.service
 systemctl enable sddm.service
 
-## end services-x86-livecd.post
+## end x86-livecd/post/services

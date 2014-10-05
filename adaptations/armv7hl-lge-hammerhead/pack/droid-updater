@@ -1,11 +1,12 @@
-### begin package-droid-updater
+### begin armv7hl-lge-hammerhead/pack/droid-updater
 
-echo "--- package-droid-updater"
+echo "--- armv7hl-lge-hammerhead/pack/droid-updater"
 
 ARCHITECTURE=armv7hl
+MANUFACTURER=lge
 DEVICE=hammerhead
-ADAPTATION=google-nexus5
-VERSION_FILE=maui-armv7hl-google-nexus5/os-release
+ADAPTATION=maui-$ARCHITECTURE-$MANUFACTURER-$DEVICE
+VERSION_FILE=$ADAPTATION/os-release
 
 source $VERSION_FILE
 
@@ -24,8 +25,7 @@ fi
 IMG_SIZE=$(du -h $GEN_IMG_BASE.tar.bz2 | cut -f1)
  
 # Output filenames
-ROOTFS_BASE=maui-armv7hl-google-nexus5
-DST_IMG_BASE=$ID-$DEVICE-$VERSION_ID
+DST_IMG_BASE=$ID-$MANUFACTURER-$DEVICE-$VERSION_ID
 DST_IMG=$DST_IMG_BASE.tar.bz2
  
 # Copy boot image, updater scripts and updater binary into updater .zip tree
@@ -43,7 +43,7 @@ sed -i -e "s %VERSION% $VERSION_ID g" -e "s %IMAGE_FILE% $DST_IMG g" -e "s %IMAG
  
 # Pack updater .zip
 pushd updater
-zip -r ../$DST_IMG_BASE.zip META-INF/com/google/android/update-binary META-INF/com/google/android/updater-script updater-unpack.sh hybris-boot.img $ROOTFS_BASE.ks $DST_IMG
+zip -r ../$DST_IMG_BASE.zip META-INF/com/google/android/update-binary META-INF/com/google/android/updater-script updater-unpack.sh hybris-boot.img ../$ADAPTATION.ks $DST_IMG
 popd
 
 # Move the rootfs back out of the updater directory
@@ -54,4 +54,4 @@ rm -rf updater
 
 popd
 
-### end package-droid-updater
+### end armv7hl-lge-hammerhead/pack/droid-updater

@@ -1,0 +1,7 @@
+### begin armv7hl-lge-hammerhead/pre/init
+
+echo "--- armv7hl-lge-hammerhead/pre/init"
+
+touch $INSTALL_ROOT/.bootstrap
+
+### end armv7hl-lge-hammerhead/pre/init

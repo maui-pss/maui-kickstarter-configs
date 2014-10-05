@@ -1,0 +1,25 @@
+Maui Adaptation SDK:
+    Partition: partition
+    Kernel: kernel-adaptation-pc
+    Inherit:
+        - Maui SDK
+        - Maui x86 Common
+        - SSSE3 enabled X86 architecture
+    PostScripts:
+        - post/setup
+
+Maui Adaptation x86 SDK:
+    FileName: maui-x86-sdk
+    Architecture: i686
+    RepositoryArchitecture: i586
+    Mic2Options: -o . -f fs --outdir=maui-x86-sdk --pack-to=maui-x86-latest-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-sdk.log
+    Inherit:
+        - Maui Adaptation SDK
+
+Maui Adaptation x86_64 SDK:
+    FileName: maui-x86_64-sdk
+    Architecture: x86_64
+    RepositoryArchitecture: x86_64
+    Mic2Options: -o . -f fs --outdir=maui-x86_64-sdk --pack-to=maui-x86_64-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-sdk.log
+    Inherit:
+        - Maui Adaptation SDK

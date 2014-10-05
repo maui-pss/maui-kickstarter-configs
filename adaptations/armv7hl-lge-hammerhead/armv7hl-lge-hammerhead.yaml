@@ -1,7 +1,8 @@
-Maui Adaptation Google Nexus 5:
-    Part: google-nexus5.partition
+Maui Adaptation LGE Hammerhead:
+    FileName: maui-armv7hl-lge-hammerhead
+    Part: partition
     Kernel: droid-hal-hammerhead-kernel
-    Mic2Options: -o . -f fs --outdir=maui-armv7hl-google-nexus5 --pack-to=maui-armv7hl-google-nexus5-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name --arch=armv7hl --logfile=maui-armv7hl-google-nexus5-build.log
+    Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-hammerhead --pack-to=maui-armv7hl-lge-hammerhead-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-hammerhead-build.log
     Inherit:
         - ARMv7 hardfp architecture
     Repos:
@@ -28,10 +29,10 @@ Maui Adaptation Google Nexus 5:
         - /boot/update-binary
         - /etc/os-release
     PreScripts:
-        - scripts/google-nexus5/01_init
-        - scripts/google-nexus5/50_oneshot
+        - pre/init
+        - pre/oneshot
     PostScripts:
-        - scripts/services-google-nexus5.post
-        - scripts/google-nexus5.post
+        - post/services
+        - post/postinstall
     PackScripts:
-        - scripts/google-nexus5/package-droid-updater
+        - pack/droid-updater

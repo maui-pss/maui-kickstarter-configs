@@ -1,6 +1,6 @@
-### begin 50_oneshot
+### begin armv7hl-lge-hammerhead/pre/oneshot
 
-echo "--- 50_oneshot"
+echo "--- armv7hl-lge-hammerhead/pre/oneshot"
 
 # Exit boostrap mode
 rm -f /.bootstrap
@@ -19,4 +19,4 @@ if [ -x /usr/bin/oneshot ]; then
      su -c "/usr/bin/oneshot --mic" $DEVICEUSER
 fi
 
-### end 50_oneshot
+### end armv7hl-lge-hammerhead/pre/oneshot

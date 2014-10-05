@@ -1,0 +1,30 @@
+Maui Adaptation Common x86 VM:
+    Partition: partition
+    Kernel: kernel-adaptation-pc
+    BootloaderTimeout: 0
+    BootloaderOptions: "quiet"
+    Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name
+    Inherit:
+        - Maui x86 Common
+    PostScripts:
+        - post/services
+
+Maui Adaptation x86 VM:
+    FileName: maui-x86-vm
+    Architecture: i686
+    RepositoryArchitecture: i586
+    Mic2Options: -o . -f maui_raw --outdir=maui-x86-vm --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-vm.log
+    Inherit:
+        - Maui Desktop
+        - Maui Adaptation Common x86 VM
+        - SSSE3 enabled X86 architecture
+
+Maui Adaptation x86_64 VM:
+    FileName: maui-x86_64-vm
+    Architecture: x86_64
+    RepositoryArchitecture: x86_64
+    Mic2Options: -o . -f maui_raw --outdir=maui-x86_64-vm --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-vm.log
+    Inherit:
+        - Maui Desktop
+        - Maui Adaptation Common x86 VM
+        - SSSE3 enabled X86 architecture

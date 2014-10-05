@@ -41,8 +41,7 @@ Maui SDK:
         - android-tools
 
     PostScripts:
-        - rpm-rebuilddb.post
-        - scripts/sdk.post
+        - scripts/rpm-rebuilddb.post
 
     NoChrootScripts:
         - scripts/img-name.post

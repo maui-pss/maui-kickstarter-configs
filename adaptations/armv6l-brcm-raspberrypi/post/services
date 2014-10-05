@@ -1,10 +1,10 @@
-## services-rpi.post from maui-kickstarter-configs package
+## begin armv6l-brcm-raspberrypi/post/services
 
-echo "--- services-rpi.post"
+echo "--- armv6l-brcm-raspberrypi/post/services"
 
 systemctl disable wpa_supplicant.service
 systemctl disable bluetooth.target
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
 
-## end services-rpi.post
+## end armv6l-brcm-raspberrypi/post/services

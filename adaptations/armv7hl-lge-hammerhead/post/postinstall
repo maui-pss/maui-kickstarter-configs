@@ -1,6 +1,6 @@
-## google-nexus5.post from maui-kickstarter-configs package
+## begin armv7hl-lge-hammerhead/post/postinstall
 
-echo "--- google-nexus5.post"
+echo "--- armv7hl-lge-hammerhead/post/postinstall"
 
 # droid-hal-init is sometimes started before /system is mounted and
 # causes race condition with property service.
@@ -9,4 +9,4 @@ sed -i "s;WantedBy;RequiredBy;g" /lib/systemd/system/system.mount
 echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
 echo "[Install]" >> /lib/systemd/system/local-fs.target
 
-## end google-nexus5.post
+## end armv7hl-lge-hammerhead/post/postinstall

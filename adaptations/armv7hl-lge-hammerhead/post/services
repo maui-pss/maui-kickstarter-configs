@@ -1,10 +1,10 @@
-## services-google-nexus5.post from maui-kickstarter-configs package
+## begin armv7hl-lge-hammerhead/post/services
 
-echo "--- services-google-nexus5.post"
+echo "--- armv7hl-lge-hammerhead/post/services"
 
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
 systemctl enable connman.service
 systemctl enable sshd.service
 
-## end services-google-nexus5.post
+## end armv7hl-lge-hammerhead/post/services

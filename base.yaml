@@ -1,6 +1,13 @@
 ExternalConfigs:
    - generic
    - adaptations
+   - adaptations/armv6l-brcm-raspberrypi
+   - adaptations/armv7hl-asus-grouper
+   - adaptations/armv7hl-lge-hammerhead
+   - adaptations/armv7hl-lge-mako
+   - adaptations/x86-livecd
+   - adaptations/x86-sdk
+   - adaptations/x86-vm
    - scripts
 
 Configurations:
@@ -63,120 +70,63 @@ Configurations:
     ### PC
 
     - Name: Maui x86 Virtual Machine
-      FileName: maui-x86-vm
-      Active: True
-      Architecture: i686
-      RepositoryArchitecture: i586
-      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-vm.log
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
+      Active: False
       Inherit:
-          - Maui Desktop
-          - Maui x86 Adaptation VM
-          - SSSE3 enabled X86 architecture
+          - Maui Adaptation x86 VM
 
     - Name: Maui x86_64 Virtual Machine
-      FileName: maui-x86_64-vm
-      Active: True
-      Architecture: x86_64
-      RepositoryArchitecture: x86_64
-      Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-vm.log
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
+      Active: False
       Inherit:
-          - Maui Desktop
-          - Maui x86 Adaptation VM
-          - SSSE3 enabled X86 architecture
+          - Maui Adaptation x86_64 VM
 
     - Name: Maui x86 Live CD
-      FileName: maui-x86-livecd
       Active: True
-      Architecture: i686
-      RepositoryArchitecture: i586
-      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-livecd.log
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
       Inherit:
-          - Maui Desktop
-          - Maui x86 Adaptation LiveCD
-          - SSSE3 enabled X86 architecture
+          - Maui Adaptation x86 LiveCD
 
     - Name: Maui x86_64 LiveCD
-      FileName: maui-x86_64-livecd
       Active: True
-      Architecture: x86_64
-      RepositoryArchitecture: x86_64
-      Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-livecd.log
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
       Inherit:
-          - Maui Desktop
-          - Maui x86 Adaptation LiveCD
-          - SSSE3 enabled X86 architecture
+          - Maui Adaptation x86_64 LiveCD
 
     ### SDK
 
     - Name: Maui x86 SDK
-      FileName: maui-x86-sdk
       Active: True
-      Architecture: i686
-      RepositoryArchitecture: i586
-      Mic2Options: -o . -f fs --pack-to=maui-x86-latest-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-sdk.log
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
       Inherit:
-          - Maui SDK
-          - Maui x86 Common
-          - SSSE3 enabled X86 architecture
+          - Maui Adaptation x86 SDK
 
     - Name: Maui x86_64 SDK
-      FileName: maui-x86_64-sdk
       Active: True
-      Architecture: x86_64
-      RepositoryArchitecture: x86_64
-      Mic2Options: -o . -f fs --pack-to=maui-x86_64-sdk-rolling-chroot.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-sdk.log
-      Kernel: kernel-adaptation-pc
-      Part: x86.partition
       Inherit:
-          - Maui SDK
-          - Maui x86 Common
+          - Maui Adaptation x86_64 SDK
 
     ### ARM boards
 
     - Name: Maui for Raspberry Pi
-      FileName: maui-armv6l-rpi
       Active: False
-      BootloaderTimeout: 0
-      BootloaderOptions: "quiet"
       Inherit:
           - Maui Core
           - Maui Adaptation Raspberry Pi
 
     ### ARM phones
 
-    - Name: Maui for Google Nexus 4
-      FileName: maui-armv7hl-google-nexus4
+    - Name: Maui for LGE Nexus 4
       Active: False
       Inherit:
           - Maui Mobile
-          - Maui Adaptation Google Nexus 4
+          - Maui Adaptation LGE Mako
 
-    - Name: Maui for Google Nexus 5
-      FileName: maui-armv7hl-google-nexus5
+    - Name: Maui for LGE Nexus 5
       Active: True
       Inherit:
           - Maui Mobile
-          - Maui Adaptation Google Nexus 5
+          - Maui Adaptation LGE Hammerhead
 
     ### ARM tablets
 
-    - Name: Maui for Google Nexus 7
-      FileName: maui-armv7hl-google-nexus7
+    - Name: Maui for Asus Nexus 7 2012 WiFi
       Active: False
       Inherit:
           - Maui Mobile
-          - Maui Adaptation Google Nexus 7
+          - Maui Adaptation Asus Grouper

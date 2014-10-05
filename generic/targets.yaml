@@ -14,6 +14,7 @@ ARMv7 thumb neon hardfp architecture:
 
 ARMv6 softfp architecture:
     Architecture: armv6l
+    RepositoryArchitecture: armv6l
     PostScripts:
         - scripts/arch-armv6l.post
 

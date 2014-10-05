@@ -1,9 +1,12 @@
 Maui Adaptation Raspberry Pi:
-    Architecture: armv6l
-    RepositoryArchitecture: armv6l
-    Part: rpi.partition
+    FileName: armv6l-brcm-raspberrypi
+    Part: partition
     Kernel: kernel-adaptation-rpi
-    Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv6l-rpi-build.log
+    BootloaderTimeout: 0
+    BootloaderOptions: "quiet"
+    Mic2Options: -o . -f raw --outdir=maui-armv6l-brcm-raspberrypi --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-armv6l-brcm-raspberrypi-build.log
+    Inherit:
+        - ARMv6 softfp architecture
     Repos:
         - maui-hw-brcm-bcm2835-rpi
     ExtraPackages:
@@ -21,5 +24,5 @@ Maui Adaptation Raspberry Pi:
     #    - qtplatformplugin-rpi
     PostScripts:
         - scripts/arch-armv6l.post
-        - scripts/rpi-setup.post
-        - scripts/services-rpi.post
+        - post/setup
+        - post/services

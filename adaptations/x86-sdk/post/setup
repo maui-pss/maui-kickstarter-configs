@@ -1,6 +1,6 @@
-## sdk.post from maui-kickstarter-configs package
+## begin x86-sdk/post/setup
 
-echo "--- sdk.post"
+echo "--- x86-sdk/post/setup"
 
 # Make resolver work inside the chroot
 ln -sf /run/systemd/resolve/resolv.conf /etc
@@ -8,4 +8,4 @@ ln -sf /run/systemd/resolve/resolv.conf /etc
 # Ensure this chroot is marked as an SDK
 echo "MerSDK" > /etc/MerSDK
 
-## end sdk.post
+## end x86-sdk/post/setup

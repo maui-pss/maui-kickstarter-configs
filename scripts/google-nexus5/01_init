@@ -1,7 +1,0 @@
-### begin 01_init
-
-echo "--- 01_init"
-
-touch $INSTALL_ROOT/.bootstrap
-
-### end 01_init

@@ -1,0 +1,33 @@
+Maui Adaptation Common x86 LiveCD:
+    Partition: partition
+    Kernel: kernel-adaptation-pc
+    Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name
+    Inherit:
+        - Maui x86 Common
+    Groups:
+        - x86 LiveCD Support
+    ExtraPackages:
+        - maui-installer
+    PostScripts:
+        - post/setup
+        - post/services
+
+Maui Adaptation x86 LiveCD:
+    FileName: maui-x86-livecd
+    Architecture: i686
+    RepositoryArchitecture: i586
+    Mic2Options: -o . -f maui_livecd --outdir=maui-x86-livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86-livecd.log
+    Inherit:
+        - Maui Desktop
+        - Maui Adaptation Common x86 LiveCD
+        - SSSE3 enabled X86 architecture
+
+Maui Adaptation x86_64 LiveCD:
+    FileName: maui-x86_64-livecd
+    Architecture: x86_64
+    RepositoryArchitecture: x86_64
+    Mic2Options: -o . -f maui_livecd --outdir=maui-x86_64-livecd --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-x86_64-livecd.log
+    Inherit:
+        - Maui Desktop
+        - Maui Adaptation Common x86 LiveCD
+        - SSSE3 enabled X86 architecture
