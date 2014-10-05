@@ -1,6 +1,6 @@
 Maui Adaptation LGE Hammerhead:
     FileName: maui-armv7hl-lge-hammerhead
-    Part: partition
+    Part: armv7hl-lge-hammerhead/partition
     Kernel: droid-hal-hammerhead-kernel
     Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-hammerhead --pack-to=maui-armv7hl-lge-hammerhead-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-hammerhead-build.log
     Inherit:
@@ -29,10 +29,10 @@ Maui Adaptation LGE Hammerhead:
         - /boot/update-binary
         - /etc/os-release
     PreScripts:
-        - pre/init
-        - pre/oneshot
+        - armv7hl-lge-hammerhead/pre/init
+        - armv7hl-lge-hammerhead/pre/oneshot
     PostScripts:
-        - post/services
-        - post/postinstall
+        - armv7hl-lge-hammerhead/post/services
+        - armv7hl-lge-hammerhead/post/postinstall
     PackScripts:
-        - pack/droid-updater
+        - armv7hl-lge-hammerhead/pack/droid-updater

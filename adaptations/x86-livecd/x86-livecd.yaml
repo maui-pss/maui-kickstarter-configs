@@ -1,5 +1,5 @@
 Maui Adaptation Common x86 LiveCD:
-    Partition: partition
+    Partition: x86-livecd/partition
     Kernel: kernel-adaptation-pc
     Mic2Options: -o . -f maui_livecd --pkgmgr=zypp --record-pkgs=name
     Inherit:
@@ -9,8 +9,8 @@ Maui Adaptation Common x86 LiveCD:
     ExtraPackages:
         - maui-installer
     PostScripts:
-        - post/setup
-        - post/services
+        - x86-livecd/post/setup
+        - x86-livecd/post/services
 
 Maui Adaptation x86 LiveCD:
     FileName: maui-x86-livecd

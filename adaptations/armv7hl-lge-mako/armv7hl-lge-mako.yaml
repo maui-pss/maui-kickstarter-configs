@@ -1,6 +1,6 @@
 Maui Adaptation LGE Mako:
     FileName: maui-armv7hl-lge-mako
-    Part: partition
+    Part: armv7hl-lge-mako/partition
     Kernel: kernel-adaptation-google-nexus4
     Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-mako --pack-to=maui-armv7hl-lge-mako-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-mako-build.log
     Inherit:

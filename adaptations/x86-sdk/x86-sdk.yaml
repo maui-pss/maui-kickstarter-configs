@@ -1,12 +1,12 @@
 Maui Adaptation SDK:
-    Partition: partition
+    Partition: x86-sdk/partition
     Kernel: kernel-adaptation-pc
     Inherit:
         - Maui SDK
         - Maui x86 Common
         - SSSE3 enabled X86 architecture
     PostScripts:
-        - post/setup
+        - x86-sdk/post/setup
 
 Maui Adaptation x86 SDK:
     FileName: maui-x86-sdk

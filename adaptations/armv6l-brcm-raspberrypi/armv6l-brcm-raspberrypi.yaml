@@ -1,6 +1,6 @@
 Maui Adaptation Raspberry Pi:
     FileName: armv6l-brcm-raspberrypi
-    Part: partition
+    Part: armv6l-brcm-raspberrypi/partition
     Kernel: kernel-adaptation-rpi
     BootloaderTimeout: 0
     BootloaderOptions: "quiet"
@@ -24,5 +24,5 @@ Maui Adaptation Raspberry Pi:
     #    - qtplatformplugin-rpi
     PostScripts:
         - scripts/arch-armv6l.post
-        - post/setup
-        - post/services
+        - armv6l-brcm-raspberrypi/post/setup
+        - armv6l-brcm-raspberrypi/post/services
