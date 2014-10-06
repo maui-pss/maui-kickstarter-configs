@@ -1,0 +1,10 @@
+Maui Mobile:
+    Inherit:
+        - Maui Core
+
+    DefaultUser: "maui"
+    DefaultUserGecos: "Maui user"
+    DefaultUserPass: ""
+
+    ExtraPackages:
+        - connman

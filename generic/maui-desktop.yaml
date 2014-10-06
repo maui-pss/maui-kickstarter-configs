@@ -1,0 +1,31 @@
+Maui Desktop:
+    Inherit:
+        - Maui Core
+
+    DefaultUser: "live"
+    DefaultUserGecos: "Live session user"
+    DefaultUserPass: ""
+
+    Desktop: hawaii
+
+    Repos:
+        - maui-calamares
+        - maui-frameworks
+        - maui-common-ux
+        - maui-desktop-ux
+        - maui-apps
+        - maui-tools
+
+    Groups:
+        - Maui
+        - Hawaii Desktop UX
+        - Plasma 5 Core Apps
+        - Maui Desktop Apps
+
+    ExtraPackages:
+        - NetworkManager
+
+    PostScripts:
+        - scripts/tty2-session.post
+        - scripts/enable-fuse.post
+        - scripts/services.post

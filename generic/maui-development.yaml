@@ -1,0 +1,3 @@
+Maui Development:
+    ExtraPackages:
+        - llvm

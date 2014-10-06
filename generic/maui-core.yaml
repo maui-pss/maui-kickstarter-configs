@@ -1,0 +1,25 @@
+Maui Core:
+    Language: en_US.UTF-8
+    Keyboard: us
+    Timezone: UTC
+
+    RootPass: ""
+
+    BootloaderTimeout: 10
+
+    RepositoryOptions: --save --debuginfo --source
+    Repos:
+        - maui-core
+
+    Groups:
+        - Maui Core
+
+    ExtraPackages:
+        - -ed
+        - -vi
+
+    PostScripts:
+        - scripts/rpm-rebuilddb.post
+
+    NoChrootScripts:
+        - scripts/img-name.post
