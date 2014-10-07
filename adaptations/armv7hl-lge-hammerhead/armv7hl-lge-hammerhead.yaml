@@ -5,10 +5,10 @@ Maui Adaptation LGE Hammerhead:
     Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-hammerhead --pack-to=maui-armv7hl-lge-hammerhead-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-hammerhead-build.log
     Inherit:
         - ARMv7 hardfp architecture
+#        - Maui HW Adaptation hammerhead
     Repos:
         - maui-hw-droid-tools
         - maui-hw-lge-hammerhead
-#        - maui-hw-lge-hammerhead-dhd
     ExtraPackages:
         - droid-hal-hammerhead
         - droid-hal-hammerhead-kernel-modules
@@ -17,11 +17,8 @@ Maui Adaptation LGE Hammerhead:
         - droid-hal-hammerhead-img-boot
         - droid-hal-hammerhead-img-recovery
 #        - droid-hal-hammerhead-pulseaudio-settings
-#        - droid-hal-hammerhead-sailfish-config
-#        - pulseaudio-modules-droid
-#        - libhybris-*
-#        - ngfd-plugin-droid-vibrator
-#        - usb-moded*
+        - droid-hal-hammerhead-sailfish-config
+        - droid-hal-hammerhead-preinit-plugin
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script
