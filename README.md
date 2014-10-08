@@ -43,6 +43,11 @@ the kickstarter configuration changes (e.g. git pull picks up changes from the r
 
 Step 3 produces the following kickstarts
 
+for Platform SDK:
+
+* maui-x86-sdk.ks: Platform SDK for x86 32-bit systems
+* maui-x86_64-sdk.ks: Platform SDK for x86 64-bit systems
+
 for OSTree:
 
 * maui-runtime-x86.ks: Runtime tree for x86 32-bit systems
@@ -62,10 +67,29 @@ for live medias:
 
 for hardware adaptations:
 
-* maui-armv6l-rpi: Raspberry Pi adaptation
-* maui-armv7hl-google-nexus7: Google Nexus 7 adaptation
+* maui-armv6l-brcm-raspberrypi: Raspberry Pi adaptation
+* maui-armv7hl-lge-mako: LG Nexus 4 adaptation
+* maui-armv7hl-lge-hammerhead: LG Nexus 5 adaptation
+* maui-armv7hl-asus-grouper: Asus Nexus 7 2012 WiFi adaptation
+
+Please refer to the single targets documentation to learn more
+about their state and whether they are currently enabled or not.
+
+## Building the Platform SDK
+
+**WARNING:** Only maui-x86-sdk.ks is currently enabled.
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+
+Choose the target you want to build, in this example we choose `maui-x86-sdk`:
+
+```sh
+pushd maui-ks/; sudo mic create auto maui-x86-sdk.ks; popd
+```
 
 ## Building trees for OSTree
+
+**WARNING:** Currently disabled.
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
@@ -83,7 +107,29 @@ The following files will be created and are named after the target:
 
 ## Building hardware adaptations
 
+## Virtual machines
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+
+Choose the virtual machine you want to build, in this example we choose `maui-x86-vm`:
+
+```sh
+pushd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
+```
+
+## Live medias
+
+Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+
+Choose the target you want to build, in this example we choose `maui-x86-livecd`:
+
+```sh
+pushd maui-ks/; sudo mic create auto maui-x86-livecd.ks; popd
+```
+
 ### Raspberry Pi
+
+**WARNING:** Currently in development.
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
@@ -96,7 +142,7 @@ sudo zypper install syslinux-extlinux
 Create the image:
 
 ```sh
-pushd maui-ks/; sudo mic create auto maui-armv6l-rpi.ks; popd
+pushd maui-ks/; sudo mic create auto maui-armv6l-brcm-raspberrypi.ks; popd
 ```
 
 Now you can insert a SDCard and write the image to it:
@@ -105,32 +151,38 @@ Now you can insert a SDCard and write the image to it:
 sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 ```
 
-### Google Nexus 7
+### LG Nexus 4
+
+**WARNING:** Not yet supported.
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Create the image:
 
 ```sh
-pushd maui-ks/; sudo mic create auto maui-armv7hl-google-nexus7.ks; popd
+pushd maui-ks/; sudo mic create auto maui-armv7hl-lge-mako.ks; popd
 ```
 
-## Building virtual machines
+### LG Nexus 5
+
+**WARNING:** Currently in development.
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
-Choose the virtual machine you want to build, in this example we choose `maui-x86-vm`:
+Create the image:
 
 ```sh
-pushd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
+pushd maui-ks/; sudo mic create auto maui-armv7hl-lge-hammerhead.ks; popd
 ```
 
-## Building live media
+### Asus Nexus 7 2012 WiFi
+
+**WARNING:** Not yet supported.
 
 Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
-Choose the virtual machine you want to build, in this example we choose `maui-x86-livecd`:
+Create the image:
 
 ```sh
-pushd maui-ks/; sudo mic create auto maui-x86-livecd.ks; popd
+pushd maui-ks/; sudo mic create auto maui-armv7hl-asus-grouper.ks; popd
 ```
