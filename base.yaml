@@ -104,7 +104,7 @@ Configurations:
     ### ARM boards
 
     - Name: Maui for Raspberry Pi
-      Active: False
+      Active: True
       Inherit:
           - Maui Core
           - Maui Adaptation Raspberry Pi
