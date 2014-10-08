@@ -7,6 +7,7 @@ Maui Adaptation Raspberry Pi:
     Mic2Options: -o . -f raw --outdir=maui-armv6l-brcm-raspberrypi --pkgmgr=zypp --record-pkgs=name,url,content,license --logfile=maui-armv6l-brcm-raspberrypi-build.log
     Inherit:
         - ARMv6 softfp architecture
+        - Maui Board
     Repos:
         - maui-hw-brcm-bcm2835-rpi
     ExtraPackages:
