@@ -1,5 +1,5 @@
 Maui Adaptation Raspberry Pi:
-    FileName: armv6l-brcm-raspberrypi
+    FileName: maui-armv6l-brcm-raspberrypi
     Part: armv6l-brcm-raspberrypi/partition
     Kernel: kernel-adaptation-rpi
     BootloaderTimeout: 0
