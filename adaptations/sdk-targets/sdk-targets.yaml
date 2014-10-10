@@ -1,0 +1,32 @@
+Maui SDK Target i486:
+    RepositoryArchitecture: i586
+    FileName: maui-sdk-target-i486
+    Part: sdk-targets/partition
+    Mic2Options: -o . -f fs --outdir=maui-sdk-target-i486 --pack-to=maui-sdk-target-i486.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=i486 --logfile=maui-sdk-target-i486-build.log
+    Inherit:
+        - Generic X86 architecture
+        - Maui SDK Target
+
+Maui SDK Target armv6l:
+    FileName: maui-sdk-target-armv6l
+    Part: sdk-targets/partition
+    Mic2Options: -o . -f fs --outdir=maui-sdk-target-armv6l --pack-to=maui-sdk-target-armv6l.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv6l --logfile=maui-sdk-target-armv6l-build.log
+    Inherit:
+        - ARMv6 softfp architecture
+        - Maui SDK Target
+
+Maui SDK Target armv7l:
+    FileName: maui-sdk-target-armv7l
+    Part: sdk-targets/partition
+    Mic2Options: -o . -f fs --outdir=maui-sdk-target-armv7l --pack-to=maui-sdk-target-armv7l.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7l --logfile=maui-sdk-target-armv7l-build.log
+    Inherit:
+        - ARMv7 hardfp architecture
+        - Maui SDK Target
+
+Maui SDK Target armv7hl:
+    FileName: maui-sdk-target-armv7hl
+    Part: sdk-targets/partition
+    Mic2Options: -o . -f fs --outdir=maui-sdk-target-armv7hl --pack-to=maui-sdk-target-armv7hl.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-sdk-target-armv7hl-build.log
+    Inherit:
+        - ARMv7 hardfp architecture
+        - Maui SDK Target

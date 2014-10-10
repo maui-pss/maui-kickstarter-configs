@@ -8,6 +8,7 @@ ExternalConfigs:
    - adaptations/x86-livecd
    - adaptations/x86-sdk
    - adaptations/x86-vm
+   - adaptations/sdk-targets
    - scripts
 
 Configurations:
@@ -100,6 +101,26 @@ Configurations:
       Active: True
       Inherit:
           - Maui Adaptation x86_64 SDK
+
+    - Name: Maui SDK Target for i486
+      Active: True
+      Inherit:
+          - Maui SDK Target i486
+
+    - Name: Maui SDK Target for armv6l
+      Active: True
+      Inherit:
+          - Maui SDK Target armv6l
+
+    - Name: Maui SDK Target for armv7l
+      Active: True
+      Inherit:
+          - Maui SDK Target armv7l
+
+    - Name: Maui SDK Target for armv7hl
+      Active: True
+      Inherit:
+          - Maui SDK Target armv7hl
 
     ### ARM boards
 

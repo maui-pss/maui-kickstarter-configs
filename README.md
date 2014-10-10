@@ -48,6 +48,13 @@ for Platform SDK:
 * maui-x86-sdk.ks: Platform SDK for x86 32-bit systems
 * maui-x86_64-sdk.ks: Platform SDK for x86 64-bit systems
 
+Platform SDK targets for scratchbox2:
+
+* maui-sdk-target-i486: Target for x86 32-bit systems
+* maui-sdk-target-armv6l: Target for armv6l systems
+* maui-sdk-target-armv7l: Target for armv7l systems
+* maui-sdk-target-armv7hl: Target for armv7hl systems
+
 for OSTree:
 
 * maui-runtime-x86.ks: Runtime tree for x86 32-bit systems

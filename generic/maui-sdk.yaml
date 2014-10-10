@@ -45,3 +45,37 @@ Maui SDK:
 
     NoChrootScripts:
         - scripts/img-name.post
+
+Maui SDK Target:
+    Language: en_US.UTF-8
+    Keyboard: us
+    Timezone: UTC
+
+    RootPass: ""
+    DefaultUser: "maui"
+    DefaultUserGecos: "SDK user"
+    DefaultUserPass: ""
+
+    RepositoryOptions: --save --debuginfo --source
+    Repos:
+        - maui-core
+        - maui-frameworks
+        - maui-common-ux
+        - maui-tools
+
+#    Groups:
+#        - Qt 5 Complete SDK
+
+    ExtraPackages:
+        - -ed
+        - -vi
+        - glibc-devel
+        - mesa-llvmpipe-libEGL-devel
+        - mesa-llvmpipe-libGLESv2-devel
+        - shadow-utils
+        - rpm-build
+        - meego-rpm-config
+        - zypper
+
+    PostScripts:
+        - scripts/rpm-rebuilddb.post
