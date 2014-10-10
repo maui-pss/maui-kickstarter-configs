@@ -33,3 +33,11 @@ Maui Adaptation LGE Hammerhead:
         #- armv7hl-lge-hammerhead/post/postinstall
     PackScripts:
         - armv7hl-lge-hammerhead/pack/droid-updater
+
+Maui SDK Target armv7hl-lge-hammerhead:
+    FileName: maui-sdk-target-armv7hl-lge-hammerhead
+    Mic2Options: -o . -f fs --outdir=maui-sdk-target-armv7hl-lge-hammerhead --pack-to=maui-sdk-target-armv7hl-lge-hammerhead.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url --arch=armv7hl --logfile=maui-sdk-target-armv7hl-lge-hammerhead-build.log
+    Inherit:
+        - Maui SDK Target armv7hl
+    Repos:
+        - maui-hw-lge-hammerhead

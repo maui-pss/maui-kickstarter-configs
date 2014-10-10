@@ -144,6 +144,11 @@ Configurations:
           - Maui Mobile
           - Maui Adaptation LGE Hammerhead
 
+    - Name: Maui SDK Target for LGE Nexus 5
+      Active: True
+      Inherit:
+          - Maui SDK Target armv7hl-lge-hammerhead
+
     ### ARM tablets
 
     - Name: Maui for Asus Nexus 7 2012 WiFi
