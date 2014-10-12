@@ -9,7 +9,6 @@ Maui Desktop:
     Desktop: hawaii
 
     Repos:
-        - maui-calamares
         - maui-frameworks
         - maui-common-ux
         - maui-desktop-ux
