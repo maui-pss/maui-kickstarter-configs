@@ -41,36 +41,37 @@ maui-kickstarter -e . -c releases/maui-latest-devel.yaml -o maui-ks
 Steps 1 and 2 must be performed only the first time, step 3 must be performed every time
 the kickstarter configuration changes (e.g. git pull picks up changes from the repository).
 
-Step 3 produces the following kickstarts
+Step 3 produces kickstart files for the following targets
 
 for Platform SDK:
 
-* maui-x86-sdk.ks: Platform SDK for x86 32-bit systems
-* maui-x86_64-sdk.ks: Platform SDK for x86 64-bit systems
+* maui-x86-sdk: Platform SDK for x86 32-bit systems
+* maui-x86_64-sdk: Platform SDK for x86 64-bit systems
 
-Platform SDK targets for scratchbox2:
+for scratchbox2:
 
 * maui-sdk-target-i486: Target for x86 32-bit systems
 * maui-sdk-target-armv6l: Target for armv6l systems
 * maui-sdk-target-armv7l: Target for armv7l systems
 * maui-sdk-target-armv7hl: Target for armv7hl systems
+* maui-sdk-target-armv7hl-lge-hammerhead: Target for LG Nexus 5 adaptation development
 
 for OSTree:
 
-* maui-runtime-x86.ks: Runtime tree for x86 32-bit systems
-* maui-devel-x86.ks: Development tree for x86 32-bit systems
+* maui-runtime-x86: Runtime tree for x86 32-bit systems
+* maui-devel-x86: Development tree for x86 32-bit systems
 * maui-runtime-x86_64: Runtime tree for x86 64-bit systems
 * maui-devel-x86_64: Development tree for x86 64-bit systems
 
 for virtual machines:
 
-* maui-x86-vm.ks: x86 32-bit virtual machine
-* maui-x86_64-vm.ks: x86 64-bit virtual machine
+* maui-x86-vm: x86 32-bit virtual machine
+* maui-x86_64-vm: x86 64-bit virtual machine
 
 for live medias:
 
-* maui-x86-livecd.ks: x86 32-bit live CD
-* maui-x86_64-livecd.ks: x86 64-bit live CD
+* maui-x86-livecd: x86 32-bit live CD
+* maui-x86_64-livecd: x86 64-bit live CD
 
 for hardware adaptations:
 
@@ -82,63 +83,46 @@ for hardware adaptations:
 Please refer to the single targets documentation to learn more
 about their state and whether they are currently enabled or not.
 
-## Building the Platform SDK
+## How to build an image
 
-**WARNING:** Only maui-x86-sdk.ks is currently enabled.
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Choose the target you want to build, in this example we choose `maui-x86-sdk`:
+Just type make followed by the target name, for example if you want to
+build maui-x86_64-livecd type the following command:
 
 ```sh
-pushd maui-ks/; sudo mic create auto maui-x86-sdk.ks; popd
+make maui-x86_64-livecd
 ```
 
-## Building trees for OSTree
+## Targets status
 
-**WARNING:** Currently disabled.
+The following targets are stable and expected to work:
 
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
+* maui-x86-livecd
+* maui-x86_64-livecd
 
-Choose the OS tree you want to build, in this example we choose `maui-runtime-x86`:
+The following targets are in development, they might be broken sometimes:
 
-```sh
-pushd maui-ks/; sudo mic create auto maui-runtime-x86.ks; popd
-```
+* maui-x86-sdk
+* maui-armv6l-brcm-raspberrypi
+* maui-armv7hl-lge-hammerhead
 
-The following files will be created and are named after the target:
+The following targets are not yet ready and known to be broken:
 
-* maui-runtime-x86.tar.gz: compressed tarball to import into OSTree
-* maui-runtime-x86.packages: list of packages included by the tree
-* maui-runtime-x86-build.log: logs produced by mic
+* maui-x86_64-sdk
+* maui-x86-vm
+* maui-x86_64-vm
+* maui-armv7hl-lge-mako
+* maui-armv7hl-asus-grouper
 
-## Building hardware adaptations
+Development on the following targets is suspended:
 
-## Virtual machines
+* maui-runtime-x86
+* maui-devel-x86
+* maui-runtime-x86_64
+* maui-devel-x86_64
 
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Choose the virtual machine you want to build, in this example we choose `maui-x86-vm`:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-x86-vm.ks; popd
-```
-
-## Live medias
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Choose the target you want to build, in this example we choose `maui-x86-livecd`:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-x86-livecd.ks; popd
-```
+## Additional notes on adaptations
 
 ### Raspberry Pi
-
-**WARNING:** Currently in development.
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
 
 Before building the Raspberry Pi image remember to install a few packages:
 
@@ -146,50 +130,8 @@ Before building the Raspberry Pi image remember to install a few packages:
 sudo zypper install syslinux-extlinux
 ```
 
-Create the image:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-armv6l-brcm-raspberrypi.ks; popd
-```
-
-Now you can insert a SDCard and write the image to it:
+Once the image is created you can insert a SDCard and write the image to it:
 
 ```sh
 sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
-```
-
-### LG Nexus 4
-
-**WARNING:** Not yet supported.
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Create the image:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-armv7hl-lge-mako.ks; popd
-```
-
-### LG Nexus 5
-
-**WARNING:** Currently in development.
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Create the image:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-armv7hl-lge-hammerhead.ks; popd
-```
-
-### Asus Nexus 7 2012 WiFi
-
-**WARNING:** Not yet supported.
-
-Enter the Mer Platform SDK and goes to the maui-kickstarter-configs/ directory.
-
-Create the image:
-
-```sh
-pushd maui-ks/; sudo mic create auto maui-armv7hl-asus-grouper.ks; popd
 ```
