@@ -1,7 +1,7 @@
 Maui Adaptation LGE Hammerhead:
     FileName: maui-armv7hl-lge-hammerhead
     Part: armv7hl-lge-hammerhead/partition
-    Kernel: droid-hal-hammerhead-kernel
+#    Kernel: droid-hal-hammerhead-kernel
     Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-hammerhead --pack-to=maui-armv7hl-lge-hammerhead-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-hammerhead-build.log
     Inherit:
         - ARMv7 hardfp architecture
@@ -11,7 +11,14 @@ Maui Adaptation LGE Hammerhead:
     Groups:
         - Maui HW Adaptation hammerhead
     ExtraPackages:
-        - droid-hal-hammerhead-img-recovery
+#        - droid-hal-hammerhead-img-recovery
+#        - mce-plugin-libhybris
+        - usb-moded
+        - usb-moded-defaults
+        - usb-moded-defaults-android
+        - usb-moded-adb-mode
+        - usb-moded-developer-mode
+        - usb-moded-developer-mode-android
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script
