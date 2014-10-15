@@ -30,6 +30,9 @@ Repositories:
     - Name: maui-hw-brcm-bcm2835-rpi
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/brcm:/bcm2835:/rpi/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-hw-grouper
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/grouper/@MER_RELEASE@_@ARCH@/
+
     - Name: maui-hw-nv-tegra3-common
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/nv:/tegra3:/common/@MER_RELEASE@_@ARCH@/
 
