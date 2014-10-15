@@ -16,11 +16,12 @@ Maui Adaptation LGE Hammerhead:
 #        - droid-hal-hammerhead-img-recovery
 #        - mce-plugin-libhybris
         - usb-moded
-        - usb-moded-defaults
-        - usb-moded-defaults-android
-        - usb-moded-adb-mode
-        - usb-moded-developer-mode
+        - usb-moded-pc-suite-mode-android
+        - usb-moded-connection-sharing-android-config
         - usb-moded-developer-mode-android
+        - usb-moded-diagnostics-config
+        - usb-moded-defaults-android
+        - usb-moded-diag-mode-android
         - minimer
     Attachment:
         - /boot/hybris-boot.img
