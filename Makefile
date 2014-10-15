@@ -2,9 +2,10 @@
 KICKSTARTER=maui-kickstarter
 KS_DIR=maui-ks
 MIC_CREATE=pushd $(KS_DIR); sudo mic create auto $@.ks; popd
+CONFIG_FILE=releases/maui-latest-devel.yaml
 
 kickstarts:
-	$(KICKSTARTER) -e . -c releases/maui-latest-devel.yaml -o $(KS_DIR)
+	$(KICKSTARTER) -e . -c $(CONFIG_FILE) -o $(KS_DIR)
 
 all: kickstarts
 
