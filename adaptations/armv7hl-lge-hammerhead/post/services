@@ -7,7 +7,11 @@ systemctl disable systemd-resolved.service
 systemctl disable systemd-timesyncd.service
 systemctl enable connman.service
 systemctl enable sshd.service
-#systemctl enable minimer.service
-systemctl unmask sshd-keys.service
+
+# TODO: Remove this hack and provide a display-manager.service
+# that runs a graphical session
+sed -i 's,^Wants=display-manager.service,,g' /lib/systemd/system/graphical.target
+
+systemctl set-default graphical.target
 
 ## end armv7hl-lge-hammerhead/post/services
