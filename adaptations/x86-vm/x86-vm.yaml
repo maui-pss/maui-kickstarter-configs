@@ -6,6 +6,9 @@ Maui Adaptation Common x86 VM:
     Mic2Options: -o . -f maui_raw --pkgmgr=zypp --record-pkgs=name
     Inherit:
         - Maui x86 Common
+    ExtraPackages:
+        - maui-syslinux-splash
+        - maui-settings-plymouth
     PostScripts:
         - x86-vm/post/services
 
