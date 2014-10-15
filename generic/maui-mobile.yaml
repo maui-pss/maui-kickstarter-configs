@@ -8,5 +8,6 @@ Maui Mobile:
 
     ExtraPackages:
         - connman
+        - connman-test
         - busybox-static
         - vim-enhanced
