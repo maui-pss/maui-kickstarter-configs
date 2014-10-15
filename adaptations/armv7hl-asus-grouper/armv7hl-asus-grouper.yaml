@@ -2,7 +2,7 @@ Maui Adaptation Asus Grouper:
     FileName: maui-armv7hl-asus-grouper
     Part: armv7hl-asus-grouper/partition
     Kernel: kernel-adaptation-google-nexus7
-    Mic2Options: -o . -f raw --pkgmgr=zypp --record-pkgs=name --logfile=maui-armv7hl-google-nexus7-build.log
+    Mic2Options: -o . -f fs --outdir=maui-armv7hl-asus-grouper --pack-to=maui-armv7hl-asus-grouper-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url --arch=armv7hl --logfile=maui-armv7hl-asus-grouper-build.log
     Inherit:
         - ARMv7 hardfp architecture
         - Maui Adaptation Tegra3 Common
