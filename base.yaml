@@ -152,7 +152,7 @@ Configurations:
     ### ARM tablets
 
     - Name: Maui for Asus Nexus 7 2012 WiFi
-      Active: False
+      Active: True
       Inherit:
           - Maui Mobile
           - Maui Adaptation Asus Grouper
