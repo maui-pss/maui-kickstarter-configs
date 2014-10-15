@@ -8,6 +8,9 @@ Repositories:
     - Name: maui-common-ux
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-mobile-ux
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/mobile/@MER_RELEASE@_@ARCH@/
+
     - Name: maui-hawaii-ux
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/ux:/hawaii/@MER_RELEASE@_@ARCH@/
 
