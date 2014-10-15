@@ -6,7 +6,7 @@ echo "--- armv7hl-lge-hammerhead/post/postinstall"
 # causes race condition with property service.
 # Symptom: you are stuck with a google logo
 sed -i "s;WantedBy;RequiredBy;g" /lib/systemd/system/system.mount
-echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
 echo "[Install]" >> /lib/systemd/system/local-fs.target
+echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
 
 ## end armv7hl-lge-hammerhead/post/postinstall
