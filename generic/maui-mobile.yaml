@@ -4,7 +4,7 @@ Maui Mobile:
 
     DefaultUser: "maui"
     DefaultUserGecos: "Maui user"
-    DefaultUserPass: ""
+    DefaultUserPass: "maui"
 
     ExtraPackages:
         - connman
