@@ -7,7 +7,24 @@ Maui Adaptation Asus Grouper:
         - ARMv7 hardfp architecture
         - Maui Adaptation Tegra3 Common
     Repos:
+#        - maui-hw-grouper
+        - maui-hw-nv-tegra3-common
         - maui-hw-nv-tegra3-nexus7
+        - maui-qa
     ExtraPackages:
-        - config-nexus7
+        - nexus7-fw-installer
+        - configs-nexus7
         - moslo-nexus7
+        - codecs-tegra3
+        - configs-tegra3
+        - graphics-adaptation-tegra3
+        - graphics-adaptation-tegra3-libEGL
+        - graphics-adaptation-tegra3-libGLESv1
+        - graphics-adaptation-tegra3-libGLESv2
+        - graphics-adaptation-tegra3-libOMX
+        - graphics-adaptation-tegra3-xorg
+        - linux-firmware-tegra3
+        - mtdev
+        - xorg-x11-drv-evdev
+        - xorg-x11-drv-mtev
+        - minimer
