@@ -43,7 +43,7 @@ sed -i -e "s %VERSION% $VERSION_ID g" -e "s %IMAGE_FILE% $DST_IMG g" -e "s %IMAG
  
 # Pack updater .zip
 pushd updater
-zip -r ../$DST_IMG_BASE.zip META-INF/com/google/android/update-binary META-INF/com/google/android/updater-script updater-unpack.sh hybris-boot.img ../$ADAPTATION.ks $DST_IMG
+zip -r ../$DST_IMG_BASE.zip META-INF/com/google/android/update-binary META-INF/com/google/android/updater-script updater-unpack.sh hybris-boot.img $DST_IMG
 popd
 
 # Move the rootfs back out of the updater directory
