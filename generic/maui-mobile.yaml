@@ -6,6 +6,9 @@ Maui Mobile:
     DefaultUserGecos: "Maui user"
     DefaultUserPass: "maui"
 
+    Repos:
+        - maui-mobile-ux
+
     Groups:
         - Maui
 
@@ -14,3 +17,4 @@ Maui Mobile:
         - connman-test
         - busybox-static
         - vim-enhanced
+        - maui-mobile-session
