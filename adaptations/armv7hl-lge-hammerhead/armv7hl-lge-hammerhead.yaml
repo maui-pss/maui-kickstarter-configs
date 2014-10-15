@@ -33,7 +33,7 @@ Maui Adaptation LGE Hammerhead:
         - armv7hl-lge-hammerhead/pre/oneshot
     PostScripts:
         - armv7hl-lge-hammerhead/post/services
-        #- armv7hl-lge-hammerhead/post/postinstall
+        - armv7hl-lge-hammerhead/post/postinstall
     PackScripts:
         - armv7hl-lge-hammerhead/pack/droid-updater
 
