@@ -6,6 +6,9 @@ Maui Mobile:
     DefaultUserGecos: "Maui user"
     DefaultUserPass: "maui"
 
+    Groups:
+        - Maui
+
     ExtraPackages:
         - connman
         - connman-test
