@@ -4,6 +4,7 @@ echo "--- armv7hl-lge-hammerhead/post/services"
 
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
+systemctl disable systemd-timesyncd.service
 systemctl enable connman.service
 systemctl enable sshd.service
 systemctl enable minimer.service
