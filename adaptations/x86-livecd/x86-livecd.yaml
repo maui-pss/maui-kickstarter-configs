@@ -8,6 +8,8 @@ Maui Adaptation Common x86 LiveCD:
         - x86 LiveCD Support
     ExtraPackages:
         - maui-installer
+        - maui-syslinux-splash
+        - maui-settings-plymouth
     PostScripts:
         - x86-livecd/post/setup
         - x86-livecd/post/services
