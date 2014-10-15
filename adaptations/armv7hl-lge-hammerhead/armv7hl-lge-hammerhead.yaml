@@ -8,8 +8,10 @@ Maui Adaptation LGE Hammerhead:
     Repos:
         - maui-hw-droid-tools
         - maui-hw-lge-hammerhead
+        - maui-qa
     Groups:
         - Maui HW Adaptation hammerhead
+        - Qt 5 Complete
     ExtraPackages:
 #        - droid-hal-hammerhead-img-recovery
 #        - mce-plugin-libhybris
@@ -19,6 +21,7 @@ Maui Adaptation LGE Hammerhead:
         - usb-moded-adb-mode
         - usb-moded-developer-mode
         - usb-moded-developer-mode-android
+        - minimer
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script

@@ -6,5 +6,6 @@ systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
 systemctl enable connman.service
 systemctl enable sshd.service
+systemctl enable minimer.service
 
 ## end armv7hl-lge-hammerhead/post/services
