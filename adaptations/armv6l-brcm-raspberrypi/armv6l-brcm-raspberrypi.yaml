@@ -15,12 +15,12 @@ Maui Adaptation Raspberry Pi:
         - mkimage-rpi
         - rpi-configs
         - gfx-rpi
-        - gfx-rpi-libOMXIL
+    #    - gfx-rpi-libOMXIL
         - gfx-rpi-libEGL
         - gfx-rpi-libGLESv1
         - gfx-rpi-libGLESv2
-        - weston-rpi
-        - qt5-qtwayland-brcm_egl
+    #   - weston-rpi
+    #    - qt5-qtwayland-brcm_egl
     #    - gst-oxm-rpi
     #    - qtplatformplugin-rpi
     PostScripts:
