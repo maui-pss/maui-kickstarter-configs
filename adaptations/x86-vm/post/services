@@ -2,9 +2,8 @@
 
 echo "--- x86-vm/post/services"
 
-systemctl disable systemd-networkd.service
-systemctl disable systemd-resolved.service
 systemctl enable NetworkManager.service
+systemctl enable avahi-daemon.service
 systemctl enable accounts-daemon.service
 systemctl enable sddm.service
 

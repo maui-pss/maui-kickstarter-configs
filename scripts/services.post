@@ -2,8 +2,9 @@
 
 echo "--- services.post"
 
-systemctl enable avahi-daemon.service
+# Disable systemd networking by default
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
+systemctl disable systemd-timesyncd.service
 
 ## end services.post

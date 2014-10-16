@@ -33,6 +33,7 @@ Maui Adaptation LGE Hammerhead:
         - armv7hl-lge-hammerhead/pre/init
         - armv7hl-lge-hammerhead/pre/oneshot
     PostScripts:
+        - scripts/services.post
         - armv7hl-lge-hammerhead/post/services
         - armv7hl-lge-hammerhead/post/postinstall
     PackScripts:
