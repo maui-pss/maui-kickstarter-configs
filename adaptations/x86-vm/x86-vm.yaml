@@ -9,6 +9,7 @@ Maui Adaptation Common x86 VM:
     ExtraPackages:
         - maui-syslinux-splash
         - maui-settings-plymouth
+        - grub-theme-wind
     PostScripts:
         - x86-vm/post/services
 
