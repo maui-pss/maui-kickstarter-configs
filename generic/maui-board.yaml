@@ -17,9 +17,9 @@ Maui Board:
 
     Groups:
         - Maui
-        - Hawaii Desktop UX
-        - Plasma 5 Core Apps
-        - Maui Desktop Apps
+#        - Hawaii Desktop UX
+#        - Plasma 5 Core Apps
+#        - Maui Desktop Apps
 
     ExtraPackages:
         - NetworkManager
