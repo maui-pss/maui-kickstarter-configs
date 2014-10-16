@@ -2,6 +2,7 @@
 
 echo "--- armv7hl-lge-hammerhead/post/services"
 
+# Disable systemd networking and use connman
 systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
 systemctl disable systemd-timesyncd.service
@@ -22,6 +23,7 @@ systemctl disable avahi-daemon.service
 # that runs a graphical session
 sed -i 's,^Wants=display-manager.service,,g' /lib/systemd/system/graphical.target
 
+# Force default target to graphical
 systemctl set-default graphical.target
 
 ## end armv7hl-lge-hammerhead/post/services
