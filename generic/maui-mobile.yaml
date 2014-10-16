@@ -15,6 +15,7 @@ Maui Mobile:
     ExtraPackages:
         - connman
         - connman-test
+        - connman-configs-maui
         - busybox-static
         - vim-enhanced
         - maui-mobile-session
