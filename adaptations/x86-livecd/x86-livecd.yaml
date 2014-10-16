@@ -10,6 +10,7 @@ Maui Adaptation Common x86 LiveCD:
         - maui-installer
         - maui-syslinux-splash
         - maui-settings-plymouth
+        - grub-theme-wind
     PostScripts:
         - x86-livecd/post/setup
         - x86-livecd/post/services
