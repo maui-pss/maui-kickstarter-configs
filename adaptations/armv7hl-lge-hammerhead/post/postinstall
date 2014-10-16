@@ -9,4 +9,10 @@ sed -i "s;WantedBy;RequiredBy;g" /lib/systemd/system/system.mount
 echo "[Install]" >> /lib/systemd/system/local-fs.target
 echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
 
+# Add maui to sudoers, until we have a proper setup and can switch to
+# developer mode we need this for development
+cat > /etc/sudoers.d/maui << EOF
+maui ALL=(ALL) NOPASSWD: ALL
+EOF
+
 ## end armv7hl-lge-hammerhead/post/postinstall
