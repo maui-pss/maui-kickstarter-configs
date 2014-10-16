@@ -6,7 +6,17 @@ systemctl disable systemd-networkd.service
 systemctl disable systemd-resolved.service
 systemctl disable systemd-timesyncd.service
 systemctl enable connman.service
+
+# Otherwise sshd won't start automatically
+# TODO: Get rid of this as soon as proper developer mode is ready
+systemctl unmask sshd.socket
+systemctl unmask sshd-keys.service
+systemctl unmask sshd.service
 systemctl enable sshd.service
+
+# We don't need avahi but it gets enabled by the default
+# services script
+systemctl disable avahi-daemon.service
 
 # TODO: Remove this hack and provide a display-manager.service
 # that runs a graphical session
