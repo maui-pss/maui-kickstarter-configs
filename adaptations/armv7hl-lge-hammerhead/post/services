@@ -10,7 +10,14 @@ systemctl disable avahi-daemon.service
 
 # Otherwise sshd won't start automatically
 # TODO: Get rid of this as soon as proper developer mode is ready
+systemctl enable sshd.socket
 systemctl enable sshd.service
+
+# Other services
+systemctl enable usb-moded
+systemctl disable ofono
+systemctl disable connman-vpn
+systemctl disable sensord
 
 # TODO: Remove this hack and provide a display-manager.service
 # that runs a graphical session
