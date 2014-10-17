@@ -26,6 +26,9 @@ Repositories:
     - Name: maui-tools
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/tools/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-cross
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/cross/latest_i486/
+
 # Hardware adaptations
     - Name: maui-hw-x86-x86-common
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/hw:/x86:/x86-common/@MER_RELEASE@_@ARCH@/
