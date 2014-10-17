@@ -14,5 +14,6 @@ echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
 cat > /etc/sudoers.d/maui << EOF
 maui ALL=(ALL) NOPASSWD: ALL
 EOF
+chmod 0440 /etc/sudoers.d/maui
 
 ## end armv7hl-lge-hammerhead/post/postinstall
