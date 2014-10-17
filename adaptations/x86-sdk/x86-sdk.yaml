@@ -5,6 +5,8 @@ Maui Adaptation SDK:
         - Maui SDK
         - Maui x86 Common
         - SSSE3 enabled X86 architecture
+    Repos:
+        - maui-cross
     PostScripts:
         - x86-sdk/post/setup
 
