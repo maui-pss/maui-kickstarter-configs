@@ -16,4 +16,11 @@ maui ALL=(ALL) NOPASSWD: ALL
 EOF
 chmod 0440 /etc/sudoers.d/maui
 
+# Replace init-debug from droid-hal-hammerhead with the one
+# from our maui-mobile-session
+# TODO: When droid-hal-hammerhead move init-debug to a subpackage
+#       we may want to revise the following.
+mv /init-debug /init-debug.sfos
+cp /init-debug.maui /init-debug
+
 ## end armv7hl-lge-hammerhead/post/postinstall
