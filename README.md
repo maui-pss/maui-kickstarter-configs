@@ -135,3 +135,12 @@ Once the image is created you can insert a SDCard and write the image to it:
 ```sh
 sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 ```
+
+### LG Nexus 5
+
+Before building this adaptation remember to install a few packages:
+
+```
+sh
+sudo zypper install zip
+```
