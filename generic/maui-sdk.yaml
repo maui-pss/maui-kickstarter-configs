@@ -15,13 +15,11 @@ Maui SDK:
         - maui-core
         - maui-frameworks
         - maui-common-ux
-#        - maui-desktop-ux
         - maui-apps
         - maui-tools
+        - maui-cross
         - maui-hw-x86-x86-common
         - maui-hw-droid-tools
-#        - maui-hw-lge-mako-dhd
-#        - maui-hw-lge-hammerhead-dhd
 
     Groups:
         - Maui Base
