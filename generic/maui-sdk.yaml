@@ -37,6 +37,7 @@ Maui SDK:
         - sdk-chroot
         - sdk-utils
         - android-tools
+        - oneshot
 
     PostScripts:
         - scripts/rpm-rebuilddb.post
@@ -74,6 +75,9 @@ Maui SDK Target:
         - rpm-build
         - meego-rpm-config
         - zypper
+        - oneshot
+        - repomd-pattern-builder
+        - tar
 
     PostScripts:
         - scripts/rpm-rebuilddb.post
