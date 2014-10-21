@@ -19,6 +19,14 @@ systemctl disable ofono
 systemctl disable connman-vpn
 systemctl disable sensord
 
+# Mask droid-hal-init to debug boot race with /system that
+# cause segfaults. Masking this and running droid-hal-init
+# manually in a ssh session don't cause the segfault.
+# Please also note that /init-debug from Maui mounts /system
+# without systemd.mount unit, so I'm not sure I get what's
+# going on here.
+systemctl mask droid-hal-init.service
+
 # TODO: Remove this hack and provide a display-manager.service
 # that runs a graphical session
 sed -i 's,^Wants=display-manager.service,,g' /lib/systemd/system/graphical.target
