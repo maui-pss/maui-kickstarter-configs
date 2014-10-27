@@ -12,6 +12,7 @@ Maui Adaptation LGE Hammerhead:
         - maui-frameworks
         - maui-common-ux
         - hawaii
+        - phone
     Groups:
         - Maui HW Adaptation hammerhead
         - Qt 5 Complete
@@ -26,6 +27,8 @@ Maui Adaptation LGE Hammerhead:
         - usb-moded-defaults-android
         - usb-moded-diag-mode-android
         - minimer
+        - plasma-phone-components
+        - maui-mobile-session
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script
