@@ -10,6 +10,7 @@ Maui Adaptation LGE Hammerhead:
         - maui-hw-lge-hammerhead
         - maui-qa
         - maui-frameworks
+        - maui-common-ux
         - hawaii
     Groups:
         - Maui HW Adaptation hammerhead
