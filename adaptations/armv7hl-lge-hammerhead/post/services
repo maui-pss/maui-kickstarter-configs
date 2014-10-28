@@ -13,12 +13,6 @@ systemctl disable avahi-daemon.service
 systemctl enable sshd.socket
 systemctl enable sshd.service
 
-# Other services
-systemctl enable usb-moded
-systemctl disable ofono
-systemctl disable connman-vpn
-systemctl disable sensord
-
 # TODO: Remove this hack and provide a display-manager.service
 # that runs a graphical session
 sed -i 's,^Wants=display-manager.service,,g' /lib/systemd/system/graphical.target
