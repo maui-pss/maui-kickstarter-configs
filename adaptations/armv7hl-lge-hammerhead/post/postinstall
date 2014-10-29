@@ -2,13 +2,6 @@
 
 echo "--- armv7hl-lge-hammerhead/post/postinstall"
 
-# droid-hal-init is sometimes started before /system is mounted and
-# causes race condition with property service.
-# Symptom: you are stuck with a google logo
-sed -i "s;WantedBy;RequiredBy;g" /lib/systemd/system/system.mount
-echo "[Install]" >> /lib/systemd/system/local-fs.target
-echo "RequiredBy=droid-hal-init.service" >> /lib/systemd/system/local-fs.target
-
 # Add maui to sudoers, until we have a proper setup and can switch to
 # developer mode we need this for development
 cat > /etc/sudoers.d/maui << EOF
