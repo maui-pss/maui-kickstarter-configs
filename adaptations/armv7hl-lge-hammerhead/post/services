@@ -13,6 +13,12 @@ systemctl disable avahi-daemon.service
 systemctl enable sshd.socket
 systemctl enable sshd.service
 
+# Disable services that fail
+for service in droid-battery-monitor.service bluetooth.service hciattach.service; do
+    systemctl disable $service
+    systemctl mask $service
+done
+
 # TODO: Remove this hack and provide a display-manager.service
 # that runs a graphical session
 sed -i 's,^Wants=display-manager.service,,g' /lib/systemd/system/graphical.target
