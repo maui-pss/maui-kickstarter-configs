@@ -26,7 +26,7 @@ Maui Adaptation LGE Hammerhead:
         - usb-moded-diagnostics-config
         - usb-moded-defaults-android
         - usb-moded-diag-mode-android
-#        - maui-mobile-session
+        - maui-mobile-session
         - maui-bootsplash
         - plasma-phone-components
         - plasma-phone-bootsplash
