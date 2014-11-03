@@ -27,9 +27,9 @@ Maui Adaptation LGE Hammerhead:
         - usb-moded-defaults-android
         - usb-moded-diag-mode-android
         - maui-mobile-session
-        - maui-bootsplash
+#        - maui-bootsplash
         - plasma-phone-components
-        - plasma-phone-bootsplash
+#        - plasma-phone-bootsplash
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script
