@@ -17,12 +17,6 @@ mv /init-debug /init-debug.sfos
 cp /init-debug.maui /init-debug
 
 # XXX: HACK
-# These services cause problems to UI startup
-mkdir -p /usr/lib/systemd/user/user-session.target.wants.old
-for service in mission-control-5 ngfd voicecall-manager pulseaudio; do
-    mv /usr/lib/systemd/user/user-session.target.wants/${service}.service /usr/lib/systemd/user/user-session.target.wants.old
-done
-
 # Rewrite dbus service to accomodate our paths and remove OOMScoreAdjust that causes errors
 cat > /usr/lib/systemd/user/dbus.service << EOF
 [Unit]
