@@ -1,7 +1,6 @@
 Maui Adaptation LGE Hammerhead:
     FileName: maui-armv7hl-lge-hammerhead
     Part: armv7hl-lge-hammerhead/partition
-#    Kernel: droid-hal-hammerhead-kernel
     Mic2Options: -o . -f fs --outdir=maui-armv7hl-lge-hammerhead --pack-to=maui-armv7hl-lge-hammerhead-rootfs.tar.bz2 --pkgmgr=zypp --record-pkgs=name,url,content,license --arch=armv7hl --logfile=maui-armv7hl-lge-hammerhead-build.log
     Inherit:
         - ARMv7 hardfp architecture
@@ -17,8 +16,7 @@ Maui Adaptation LGE Hammerhead:
         - Maui HW Adaptation hammerhead
         - Qt 5 Complete
     ExtraPackages:
-#        - droid-hal-hammerhead-img-recovery
-#        - mce-plugin-libhybris
+        # USB connection:
         - usb-moded
         - usb-moded-pc-suite-mode-android
         - usb-moded-connection-sharing-android-config
@@ -26,10 +24,30 @@ Maui Adaptation LGE Hammerhead:
         - usb-moded-diagnostics-config
         - usb-moded-defaults-android
         - usb-moded-diag-mode-android
+
+        # UI:
         - maui-mobile-session
-#        - maui-bootsplash
         - plasma-phone-components
+
+        # Boot splash:
+#        - maui-bootsplash
 #        - plasma-phone-bootsplash
+
+        # Audio-related:
+        - ohm
+        - ohm-plugin-accessories
+        - ohm-plugin-core
+        - ohm-plugin-media
+        - ohm-plugin-profile
+        - ohm-plugin-resolver
+        - ohm-plugin-ruleengine
+        - ohm-plugin-signaling
+        - ohm-plugin-telephony
+        - ohm-plugins-dbus
+        - ohm-plugins-misc
+
+        # Others:
+        - mce-plugin-libhybris
     Attachment:
         - /boot/hybris-boot.img
         - /boot/hybris-updater-script
