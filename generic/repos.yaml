@@ -17,6 +17,9 @@ Repositories:
     - Name: maui-apps
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/apps/@MER_RELEASE@_@ARCH@/
 
+    - Name: maui-mobile-apps
+      Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/apps:/mobile/@MER_RELEASE@_@ARCH@/
+
     - Name: maui-qa
       Url: http://repo.merproject.org/obs/home:/plfiorini:/maui:/@FLAVOUR@:/qa/@MER_RELEASE@_@ARCH@/
 
