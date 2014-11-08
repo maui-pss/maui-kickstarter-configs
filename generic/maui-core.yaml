@@ -11,8 +11,8 @@ Maui Core:
     Repos:
         - maui-core
 
-    Groups:
-        - Maui Core
+#    Groups:
+#        - Maui Core
 
     ExtraPackages:
         - -ed

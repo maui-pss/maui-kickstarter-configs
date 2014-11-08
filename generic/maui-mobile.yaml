@@ -10,8 +10,8 @@ Maui Mobile:
         - maui-mobile-ux
         - maui-mobile-apps
 
-    Groups:
-        - Maui
+#    Groups:
+#        - Maui
 
     ExtraPackages:
         - connman
