@@ -24,8 +24,8 @@ Description=D-Bus Session Message Bus
 Requires=dbus.socket
 
 [Service]
-ExecStart=/usr/bin/dbus-daemon --session --address=systemd: --nofork --systemd-activation
-ExecReload=/usr/bin/dbus-send --print-reply --session --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig
+ExecStart=/bin/dbus-daemon --session --address=systemd: --nofork --systemd-activation
+ExecReload=/bin/dbus-send --print-reply --session --type=method_call --dest=org.freedesktop.DBus / org.freedesktop.DBus.ReloadConfig
 EOF
 
 # Ofono access is granted to user "radio", but our user is "maui"
