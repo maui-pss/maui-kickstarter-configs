@@ -30,6 +30,7 @@ EOF
 
 # Ofono access is granted to user "radio", but our user is "maui"
 sed -i 's,policy user="radio",policy user="maui",g' /etc/dbus-1/system.d/ofono.conf
+sed -i 's,After=local-fs.target systemd-udev-settle.service,After=local-fs.target systemd-udev-settle.service dbus.service,g' /lib/systemd/system/ohmd.service
 # XXX: HACK
 
 ## end armv7hl-lge-hammerhead/post/postinstall
