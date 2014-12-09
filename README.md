@@ -140,7 +140,6 @@ sudo dd if=maui-ks/maui-armv6l-rpi-mmcblk0p.raw of=/dev/mmcblk0 bs=4M
 
 Before building this adaptation remember to install a few packages:
 
-```
-sh
+```sh
 sudo zypper install zip
 ```
